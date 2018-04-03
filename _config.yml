@@ -1,52 +1,79 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# ----
+# Site
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
-
-google_analytics_key:
+title: August
+url: ""
+baseurl: ""
+google_analytics_key: ""
 google_maps_javascript_api_key:
 disqus_shortname:
-newsletter_action: "https://Augustwebsolutions.us17.list-manage.com/subscribe/post?u=e5156bc6b62aea6436d56bac0&amp;id=74d98af065"
+newsletter_action: ""
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /logo.png
-description: Explore the Divine within.
-author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
-social:
-  name: Divine Explorer
-  links:
-    - https://github.com/CloudCannon/justice-jekyll-template
-# Build settings
-markdown: kramdown
-theme: minima
-plugins:
+description: Spiritual journeys to find the divine within.
+
+
+paginate: 10
+paginate_path: "/advice/:num/"
+
+# collections:
+#   guides:
+#     output: true
+#     permalink: /guides/:path/
+#   journeys:
+#     output: true
+#     permalink: /journeys/:path/
+#   divine-memories:
+#     output: true
+#     permalink: /divine-memories/:path/
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+      background_image_path: 
+      image: 
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      _options:
+        content:
+          width: 960
+          height: 2000
+      _comments:
+        image: Shown in social shares and the advice list.
+  
+
+permalink: pretty
+
+jekyll-archives:
+  enabled:
+    - categories
+
+gems:
+  - jekyll-archives
+  - jekyll-sitemap
+  - jekyll-seo-tag
   - jekyll-feed
+  - jekyll-paginate
 
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+  - gulpfile.js
+  - node_modules
+  - package.json
+  - package-lock.json
 
-#Page performance
+include: ['.htaccess']
+
 sass:
   style: compressed  
 
@@ -57,16 +84,21 @@ compress_html:
   ignore:
     envs: [local]
   blanklines: false
-  profile: true
-  startings: [html, head, body]
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  profile: false
+  startings: [html, head, body]  
+
+_comments:
+  large_header: Toggles the size of the top banner.
+  show_in_navigation: Toggles a link in the top banner.
+  author_staff_member: The staff member writing this post.
+  call_to_action: Type of request shown at the bottom of this page.
+  background_image_path: Image shown in the top banner, blank for the default.
+  testimonials: Update, add or remove testimonials.
+  map: Update the map location and display settings.
+  latitude: Coordinates for the center marker on the map.
+  longitude: Coordinates for the center marker on the map.
+  zoom: The zoom level for the map.
+  phone_extension: The digits after dialing the company phone.
+  credentials: Shown as subtext on staff member summaries.
+  contact_email_address: Address for the contact form to send to.
+  new_window: Whether the link opens a new browser tab/window.

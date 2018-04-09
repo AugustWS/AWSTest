@@ -1,98 +1,259 @@
+/* Basic */
 
-html {
-	font-family: 'Signika Negative', Georgia, serif;
-	-webkit-tap-highlight-color: transparent;
-	background-color: $background-color;
-	
-	font-size: 16px;
-	@media (min-width: $mobile-break) {
-		font-size: 16px;
+	// MSIE: Required for IEMobile.
+	@-ms-viewport {
+		width: device-width;
 	}
-}
+
+// MSIE: Prevents scrollbar from overlapping content.
+	body {
+		-ms-overflow-style: scrollbar;
+		margin: 0px;
+		padding: 0px;
+		margin-top:-30px;
+	}
+
+//Ensures page width is always >=320px.
+	@media ($xsmall) {
+		html, body {
+			min-width: 320px;
+		}
+	}
 
 body {
-	font-family: 'Signika Negative', Georgia, serif;
-	line-height: 1.75em;
-	font-size: 100%;
+	background: $bg;
+	color:  $fg-light-bg;
+
+	// Prevents animation/transition "flicker" on page load.
+	// Automatically added/removed by js/main.js.
+		// &.is-loading {
+		// 	*, *:before, *:after {
+		// 		@include vendor('animation', 'none !important');
+		// 		@include vendor('transition', 'none !important');
+		// 	}
+		// }
+
 }
 
-body,
-input,
-textarea {
-	font-family: 'Signika Negative', Georgia, serif;
-	color: $sub-link-color;
-	text-rendering: geometricPrecision;
-}
 
-label,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: 'Signika Negative', Georgia, serif;
-	font-weight: 400;
+/* Type */
+
+html {
+	font-size: 16px;
+	@media ($large) {
+		font-size: 16px;
+	}
+	@media ($small) {
+		font-size: 11pt;
+	}
+	@media ($xsmall) {
+		font-size: 10pt;
+	}
+
 	
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin: 0;
-	letter-spacing: 0.04em;
+
+
+body, input, select, textarea,label,button {
+	font-family: $font-family;
+	font-size: 1rem;
+	font-weight: $font-weight;
+	line-height: 1.5;
+	
+}
+input, select, textarea,label,button {
+	margin: 0 0 ($element-margin * 0.5) 0;
 }
 
-h1, .h1 {
-	font-size: 3em;
-	line-height: 1.05;
-	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
-	font-weight: 600;
-  }
-  
-  h2, .h2 {
-	font-size: 2.30em;
-	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
-  }
-  
-  h3, .h3 {
-	font-size: 1.75em;
-	line-height: 1.4;
-	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
-	  }
-  
-  h4, .h4 {
-	font-size: 1.125em;
-	line-height: 1.2em;
-  }
-  
-  h5, .h5 {
-	font-size: 1.1em;
-	font-weight: 400;
-	line-height: 1.4em;
-	margin-bottom: 15px;
-  }
-  
-  h6, .h6 {
-	font-size: 0.9em;
-	font-weight: 600;
-  }
-  
-  p {
-	font-size: 1em;
-	line-height: 1.4em;
-  }
-  
 a {
-	color: #4489b1;
-	transition: color 0.2s ease;
+
 	text-decoration: none;
 
 	&:hover {
-		color: #007ac2;
+		text-decoration: none;
 	}
 }
 
+strong, b {
+	font-weight: $font-weight-bold;
+}
+
+em, i {
+	font-style: italic;
+}
+
+p {
+	margin: 0 0 $element-margin 0;
+
+	&.major {
+		font-size: 2rem;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: $font-weight;
+	line-height: 1.375;
+	letter-spacing: $font-letter-spacing;
+	margin: 0 0 ($element-margin * 0.5) 0;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+h1 {
+	font-size: 3.5rem;
+	line-height: 1.2;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1.1rem;
+}
+
+h5 {
+	font-size: 0.9rem;
+}
+
+h6 {
+	font-size: 0.7rem;
+}
+
+sub {
+	font-size: 0.8rem;
+	position: relative;
+	top: 0.5rem;
+}
+
+sup {
+	font-size: 0.8rem;
+	position: relative;
+	top: -0.5rem;
+}
+
+blockquote {
+	border-left: solid ($border-width * 4);
+	font-style: italic;
+	margin: 0 0 $element-margin 0;
+	padding: ($element-margin / 4) 0 ($element-margin / 4) $element-margin;
+}
+
+code {
+	border-radius: $border-radius;
+	font-family: $font-family-fixed;
+	font-size: 0.9em;
+	margin: 0 0.25rem;
+	padding: 0.25rem 0.325rem;
+}
+
+pre {
+	-webkit-overflow-scrolling: touch;
+	font-family: $font-family-fixed;
+	font-size: 0.9em;
+	margin: 0 0 $element-margin 0;
+
+	code {
+		display: block;
+		line-height: 1.5;
+		padding: 0.75rem 1rem;
+		overflow-x: auto;
+	}
+}
+
+hr {
+	border: 0;
+	border-bottom: solid $border-width;
+	margin: ($element-margin * 1.25) 0;
+
+	&.major {
+		margin: ($element-margin * 1.75) 0;
+	}
+}
+
+.align-left {
+	text-align: left;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+@media($small) {
+	p {
+		&.major {
+			font-size: 1.1rem;
+		}
+	}
+
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	h3 {
+		font-size: 1.25rem;
+	}
+
+	h4 {
+		font-size: 1rem;
+	}
+}
+
+// @mixin color-typography($p: null) {
+
+// 	@if $p != null {
+// 		background-color: ($p, $bg);
+// 		color: $($p, fg);
+// 	}
+
+// 	input, select, textarea {
+// 		color:($p, $fg-bold);
+// 	}
+
+// 	a {
+// 		color:($p,  $fg-bold);
+
+// 		&:hover {
+// 			color: ($p, $fg);
+// 		}
+// 	}
+
+// 	strong, b {
+// 		color: ($p, $fg-bold);
+// 	}
+
+// 	h1, h2, h3, h4, h5, h6 {
+// 		color: ($p, $fg-bold);
+// 	}
+
+// 	blockquote {
+// 		border-left-color: ($p, $border);
+// 	}
+
+// 	code {
+// 		background: ($p, $border-bg);
+// 		border-color: ($p, $border);
+// 	}
+
+// 	hr {
+// 		border-bottom-color: ($p, $border);
+// 	}
+// }
+
+// @include color-typography;

@@ -1,0 +1,121 @@
+.gradientBackground
+{
+
+background: $background-linear;
+}
+.pull-top
+{
+  position: relative;
+  margin-top: -14em;
+}
+.center
+{
+  margin: 0 auto;
+}
+.sk-Jumbotron {
+
+background: #ad5389;  /* fallback for old browsers */
+background: -webkit-$background-linear;
+background: $background-linear;
+
+color: $fg;
+position: relative;
+ height: 80vh;
+ padding: 3rem;
+ display: flex;
+ flex-direction: column;
+ //align-items: start;
+ justify-content: center;
+  }
+  .skew
+  {
+    position: relative;
+  }
+  .skew:before
+  {
+    content:'';
+    height: 100px;
+    width:50%;
+    position: absolute;
+    top:-48px;
+    left:0;
+    background: $bg;
+    transform: skewY(8deg);
+
+
+  }
+  .skew:after
+  {
+    content:'';
+    height: 100px;
+    width:50%;
+    position: absolute;
+    top:-48px;
+    right:0;
+    background: $bg;
+    transform: skewY(-8deg);  
+  }
+  .sk-Jumbotron h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+   
+  }
+  
+  .sk-Jumbotron p {
+    font-size: 1.3rem;
+    margin-top: 0;
+   
+  }
+  
+
+
+
+
+
+.verticle-line {
+    background-color: $brand-primary;
+    position:relative;
+    top:50%;
+    left:50%;
+    height:80px;
+    width:2px;
+    // transform: translate(-50%,-50%);
+  }
+  // .verticle-line:before{
+    
+  //   content:'';
+  //   position: absolute;
+  //   top:0;
+  //   left:0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: linear-gradient(transparent,$brand-primary, transparent);
+  //   animation: animate 2s linear infinite;
+
+  // }
+  
+  // @keyframes animate
+  // {
+  //   0%
+  //   {
+  //     transform-origin: top;
+  //     transform: scaleY(0);
+  //   }
+  //   50%
+  //   {
+  //     transform-origin: top;
+  //     transform: scaleY(1);
+  //   }
+  //  51%
+  //   {
+  //     transform-origin: bottom;
+  //     transform: scaleY(1);
+  //   }
+  //   100%
+  //   {
+  //     transform-origin: bottom;
+  //     transform: scaleY(0);
+  //   }
+  // }
+    
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */

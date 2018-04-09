@@ -74,8 +74,9 @@ exclude:
 
 include: ['.htaccess']
 
-sass:
-  style: compressed  
+# sass:
+#   style: compressed  
+
 
 compress_html:
   clippings: all

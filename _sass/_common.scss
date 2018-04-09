@@ -1,11 +1,49 @@
 // Reusable styles..Delete the ones not needed
 
+
+///
+/// Story by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+
+.margin-small
+{
+    margin:20px;
+}
+.box-shadow
+{
+    box-shadow: $box-shadow;
+}
+.button{
+    padding:1em;
+    cursor:pointer;
+    text-decoration: none;
+    background: transparent;
+    
+}
+.buttonOutline
+{
+   
+    border: 1px solid $fg;
+    
+    color:$fg;
+    
+}
+.buttonOutline-dark
+{
+   
+    border: 1px solid $brand-primary;    
+    color:$brand-primary;
+    
+}
 .border-bottom-thin {
-    border-bottom: 2px solid $sub-link-color;
+    border-bottom: 2px solid $border-bg;
 }
 
 .border-bottom-thick {
-    border-bottom: 5px solid $sub-link-color;
+    border-bottom: 5px solid $border-bg;
 }
 
 .fullWidth {
@@ -13,7 +51,7 @@
 }
 
 .thinBorder {
-    border: 1px grey solid;
+    border: 1px solid $brand-primary ;
 }
 
 .jumboHeight {
@@ -37,13 +75,13 @@
 }
 
 .light-section {
-    background-color: #f5f5f7;
+    background-color:$fg;
     box-shadow: inset 0px 15px 15px -15px rgba(100, 100, 100, 0.2);
 }
 
 .dark-section {
-    background-color: #3e3f46;
-    color: #c1c1c1;
+    background-color:$bg-linear-left;
+    color: $fg;
     box-shadow: inset 0px 15px 15px -15px rgba(0, 0, 0, 0.5);
     a {
         color: #efefef;
@@ -186,5 +224,84 @@ hr {
     & :hover {
         text-decoration: none;
         color: #FFFFFF;
+    }
+}
+
+/* Box */
+
+.box {
+    padding: 3em  0.3em;
+    background-color: #fff;
+    color: $fg-light-bg;
+    margin-bottom: $element-margin;
+    position: relative;
+   
+    // display: flex;
+    // justify-content: center;
+    
+
+    &:before, &:after {
+        content: '';
+        display: block;
+        height: 4px;
+        position: absolute;
+        right: 0;
+        width: 100%;
+    }
+
+    &:before {
+        top: 0;
+    }
+
+    &:after {
+        bottom: 0;
+    }
+
+    &.small
+    {
+        width :80vw;
+        padding: 0.2em  0.2em;
+        @media screen and ($small){
+            width :100vw;
+        }
+    }
+    &.bordered-top {
+        border-top: 5px solid $brand-primary;
+        &:before {
+            background: linear-gradient(to right, $bg 50%, bg 50%);
+        }
+
+        &:after {
+            background: linear-gradient(to right, $bg 50%, bg 50%);
+        }
+    }
+
+    
+
+    &.alt {
+        border-radius: 0;
+        padding: 0;
+    }
+
+    &.big {
+         padding:7em, 3.5em;
+
+        > header.major {
+            padding: 0 0 5em;
+        }
+    }
+
+    .image.full {
+        margin-bottom: 3em;
+        margin-left: -2em;
+        width: calc(100% + (2em * 2));
+
+        img {
+            width: 100%;
+        }
+    }
+
+    > .image.full:first-child {
+        margin-top: -3em;
     }
 }

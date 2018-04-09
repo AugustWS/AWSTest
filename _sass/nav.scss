@@ -1,0 +1,28 @@
+nav {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background: rgba(255, 255, 255, .9);
+	z-index: 999;
+
+	a {
+		display: inline-block;
+		text-decoration: none;
+		padding: 15px 10px;
+		color:$brand-primary;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 1em;
+
+		&.active {
+			color:$brand-secondary;
+		
+		}
+
+		&:hover {
+			color: #888;
+			border-bottom: 2px solid $brand-primary;
+		}
+	}
+}

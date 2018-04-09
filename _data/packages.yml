@@ -1,0 +1,51 @@
+- title: Package
+  SEO:
+    - name: starter
+      link: /seo/
+      price: 0
+      includes: 
+        - test1
+        - test2
+        - test3
+    - name: Premium
+      link: /seo/
+      price: 0
+      includes: 
+        - test1
+        - test2
+        - test3
+    - name: Something
+      link: /seo/
+      price: 0
+      includes: 
+        - test1
+        - test2
+        - test3
+
+  Web development:
+    - name: starter
+      link: /seo/
+      price: 0
+      includes: 
+        - test1
+        - test2
+        - test3
+    - name: Premium
+      link: /seo/
+      price: 0
+      includes: 
+        - test1
+        - test2
+        - test3
+    - name: Something
+      link: /seo/
+      price: 0
+      includes: 
+        - test1
+        - test2
+        - test3
+                      
+
+            
+
+    

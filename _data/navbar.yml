@@ -1,12 +1,13 @@
 ---
 - name: Home
-  link: "/"
+  link: /
 - name: About
-  link: "/about/"
-- name: Explore
-  link: "/explore/"
-- name: Guides
-  link: "/guides/"
-- name: Why
-  link: "/why-spiritual-journeys/"
-
+  link: /about/
+- name: Contact
+  link: /contact/
+- name: Work
+  link: /work/
+- name: Services
+  link: /services/
+- name: Blog
+  link: /blog/   

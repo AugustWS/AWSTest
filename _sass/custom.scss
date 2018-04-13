@@ -1,3 +1,32 @@
+.wrapper {
+  width: 80rem;
+  max-width: calc(100% - 7rem);
+  margin: 0 auto;
+  padding: 3.5rem 0;
+  z-index: 13;
+  &.bordered-top {
+      border-top: 5px solid $brand-primary;
+     
+  }
+  background: $fg;
+  color:  $fg-light-bg;
+}
+
+.sk-heroImage
+{
+  background: linear-gradient( rgba(201, 75, 75, 0.5), rgba(75, 19, 79, 0.5)),    url(/images/header.jpg);
+  // background-image: url("/images/header.jpg");
+  height: 500px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  //align-items: start;
+  justify-content: center;
+  background-repeat: no-repeat;
+  color: $fg;
+  opacity: 0.9;
+}
+
 .gradientBackground
 {
 
@@ -30,6 +59,7 @@ position: relative;
   .skew
   {
     position: relative;
+  
   }
   .skew:before
   {
@@ -40,8 +70,8 @@ position: relative;
     top:-48px;
     left:0;
     background: $bg;
-    transform: skewY(8deg);
-
+    transform: skewY(8deg);    
+   
 
   }
   .skew:after

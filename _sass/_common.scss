@@ -8,6 +8,102 @@
 ///
 
 
+.triangles
+{ 
+position:absolute;
+width:100%;
+height: 100%;
+}
+.triangles li{
+list-style:none;
+left:10px;
+bottom: -150px;
+display:block;
+
+width: 0; 
+height: 0; 
+border-left: 50px solid transparent; 
+border-right: 50px solid transparent;
+border-bottom: 100px solid red;
+animation: bubble 20s linear infinte;
+ }
+
+ .triangles li:nth-child(1)
+ {
+    border-left: 100px solid transparent; 
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid red;
+    opacity: 0.7;
+    animation-delay: 0s; 
+    position: absolute;
+    left:40%;
+ }
+
+ .triangles li:nth-child(2)
+ {
+    border-left: 70 solid transparent; 
+    border-right: 70 solid transparent;
+    border-bottom: 70 solid red;
+    opacity: 0.3;
+    animation-delay: 2s; 
+    position: absolute;
+    left:80%;
+ }
+ .triangles li:nth-child(3)
+ {
+    border-left: 50px solid transparent; 
+    border-right: 50px  solid transparent;
+    border-bottom: 50px  solid red;
+    opacity: 0.3;
+    animation-delay: 5s; 
+    position: absolute;
+    left:60%;
+ }
+ .triangles li:nth-child(3)
+ {
+    border-left: 50px solid transparent; 
+    border-right: 50px  solid transparent;
+    border-bottom: 50px  solid red;
+    opacity: 0.3;
+    animation-delay: 5s; 
+    position: absolute;
+    left:60%;
+ }
+ .triangles li:nth-child(4)
+ {
+    border-left: 60px solid transparent; 
+    border-right: 60px  solid transparent;
+    border-bottom: 60px  solid red;
+    opacity: 0.6;
+    animation-delay: 7s; 
+    position: absolute;
+    left:40%;
+ }
+ .triangles li:nth-child(4)
+ {
+    border-left: 50px solid transparent; 
+    border-right: 50px  solid transparent;
+    border-bottom: 50px  solid red;
+    opacity: 0.3;
+    animation-delay: 5s; 
+    position: absolute;
+    left:30%;
+ }
+
+ @keyframes bubble
+ {
+     from
+     {
+         transform :translateY(10) rotate(0);
+         opacity: 1;
+     }
+     to
+     {
+        transform :translateY(-1000px) rotate(720deg);
+         opacity: 0.4; 
+     }
+ }
+
 .margin-small
 {
     margin:20px;
@@ -15,6 +111,11 @@
 .box-shadow
 {
     box-shadow: $box-shadow;
+}
+
+.box-shadow-large
+{
+    box-shadow: 0 1rem 4rem 0.125rem rgba(161, 177, 204, 0.325);
 }
 .button{
     padding:1em;
@@ -30,6 +131,17 @@
     
     color:$fg;
     
+}
+.align-left {
+	text-align: left;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
 }
 .buttonOutline-dark
 {
@@ -265,18 +377,9 @@ hr {
             width :100vw;
         }
     }
-    &.bordered-top {
-        border-top: 5px solid $brand-primary;
-        &:before {
-            background: linear-gradient(to right, $bg 50%, bg 50%);
-        }
-
-        &:after {
-            background: linear-gradient(to right, $bg 50%, bg 50%);
-        }
-    }
-
     
+    
+
 
     &.alt {
         border-radius: 0;

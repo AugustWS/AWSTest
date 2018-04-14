@@ -12,7 +12,7 @@
         $(function() {
             var fonts = 'https://fonts.googleapis.com/css?family=Lato|Ubuntu:400,700';
             if (document.createStyleSheet) document.createStyleSheet(fonts);
-            else $("head").append($("<link rel='stylesheet' href='"+ fonts +"'/>"));
+            else document.getElementsByTagName('head')[0].appendChild("<link rel='stylesheet' href='"+ fonts +"'/>");
         });
     </script>
     {% include analytics.html %}

@@ -6,66 +6,78 @@
 /// pixelarity.com | hello@pixelarity.com
 /// License: pixelarity.com/license
 ///
-
+.bubble
+{
+position:absolute;
+width:20px;
+height: 20px;
+opacity: .7;
+background: chartreuse;
+transform: translateX(0px) translateY(0px) translateZ(0px); 
+transition: opacity 600ms ease-in-out 0s, transform 600ms ease-in-out 0s;
+}
 
 .triangles
 { 
 position:absolute;
 width:100%;
 height: 100%;
+z-index: -3;
+opacity: 1; 
+transition: all 2s ease-in;
 }
-.triangles li{
+
+ul.triangles li{
 list-style:none;
 left:10px;
 bottom: -150px;
 display:block;
-
 width: 0; 
 height: 0; 
 border-left: 50px solid transparent; 
 border-right: 50px solid transparent;
-border-bottom: 100px solid red;
-animation: bubble 20s linear infinte;
+border-bottom: 50px solid $bg-linear-right;
+animation: bubble 20s linear infinite;
  }
 
- .triangles li:nth-child(1)
+ ul.triangles li:nth-child(1)
  {
-    border-left: 100px solid transparent; 
-    border-right: 100px solid transparent;
-    border-bottom: 100px solid red;
+    border-left: 300px solid transparent; 
+    border-right: 300px solid transparent;
+    border-bottom: 300px solid #ffffff;
     opacity: 0.7;
     animation-delay: 0s; 
     position: absolute;
-    left:40%;
+    left:20%;
  }
 
- .triangles li:nth-child(2)
+ ul.triangles li:nth-child(2)
  {
-    border-left: 70 solid transparent; 
-    border-right: 70 solid transparent;
-    border-bottom: 70 solid red;
+    border-left: 400px solid transparent; 
+    border-right: 400px solid transparent;
+    border-bottom: 400px solid #ffffff;
     opacity: 0.3;
     animation-delay: 2s; 
     position: absolute;
     left:80%;
  }
- .triangles li:nth-child(3)
+ ul.triangles li:nth-child(4)
  {
-    border-left: 50px solid transparent; 
-    border-right: 50px  solid transparent;
-    border-bottom: 50px  solid red;
+    border-left: 600px solid transparent; 
+    border-right: 600px  solid transparent;
+    border-bottom: 600px  solid #ffffff;
     opacity: 0.3;
     animation-delay: 5s; 
     position: absolute;
     left:60%;
  }
- .triangles li:nth-child(3)
+ ul.triangles li:nth-child(5)
  {
     border-left: 50px solid transparent; 
     border-right: 50px  solid transparent;
-    border-bottom: 50px  solid red;
+    border-bottom: 50px  solid ffffff;
     opacity: 0.3;
-    animation-delay: 5s; 
+    animation-delay: 3s; 
     position: absolute;
     left:60%;
  }
@@ -73,9 +85,9 @@ animation: bubble 20s linear infinte;
  {
     border-left: 60px solid transparent; 
     border-right: 60px  solid transparent;
-    border-bottom: 60px  solid red;
+    border-bottom: 60px  solid ffffff;
     opacity: 0.6;
-    animation-delay: 7s; 
+    animation-delay: 5s; 
     position: absolute;
     left:40%;
  }
@@ -83,9 +95,9 @@ animation: bubble 20s linear infinte;
  {
     border-left: 50px solid transparent; 
     border-right: 50px  solid transparent;
-    border-bottom: 50px  solid red;
+    border-bottom: 50px  solid ffffff;
     opacity: 0.3;
-    animation-delay: 5s; 
+    animation-delay: 4s; 
     position: absolute;
     left:30%;
  }
@@ -118,11 +130,11 @@ animation: bubble 20s linear infinte;
     box-shadow: 0 1rem 4rem 0.125rem rgba(161, 177, 204, 0.325);
 }
 .button{
-    padding:1em;
+    padding:0.5em 2em;
     cursor:pointer;
     text-decoration: none;
     background: transparent;
-    
+    border-radius: 6px;
 }
 .buttonOutline
 {
@@ -150,6 +162,14 @@ animation: bubble 20s linear infinte;
     color:$brand-primary;
     
 }
+.button-cta
+{
+   
+    border: 1px solid $fg;    
+    color:$fg;
+    background-color: $bg-pop;
+    
+}
 .border-bottom-thin {
     border-bottom: 2px solid $border-bg;
 }
@@ -174,13 +194,11 @@ animation: bubble 20s linear infinte;
     position: fixed;
 }
 
-.fixedBackground {
-    position: fixed;
-    background-image: linear-gradient(160deg, #02ccba, #aa7ecd);
-    z-index: 0;
-    top: 0;
-    left: 0;
+.padding-top-bottom
+{
+    padding:1.5em 0;
 }
+
 
 .text-center {
     text-align: center;
@@ -188,7 +206,7 @@ animation: bubble 20s linear infinte;
 
 .light-section {
     background-color:$fg;
-    box-shadow: inset 0px 15px 15px -15px rgba(100, 100, 100, 0.2);
+   
 }
 
 .dark-section {

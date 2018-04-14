@@ -2,7 +2,7 @@
   width: 80rem;
   max-width: calc(100% - 7rem);
   margin: 0 auto;
-  padding: 3.5rem 0;
+  padding: 2.5rem 2rem;
   z-index: 13;
   &.bordered-top {
       border-top: 5px solid $brand-primary;
@@ -26,7 +26,11 @@
   color: $fg;
   opacity: 0.9;
 }
-
+.gradient-skew-down
+{
+  background: $background-linear;
+  transform: skewY(2deg)
+}
 .gradientBackground
 {
 
@@ -42,19 +46,20 @@ background: $background-linear;
   margin: 0 auto;
 }
 .sk-Jumbotron {
-
-background: #ad5389;  /* fallback for old browsers */
-background: -webkit-$background-linear;
-background: $background-linear;
-
+  opacity: 0.9;
+  // background: url(/images/header.jpg);
+//background: #ad5389;  /* fallback for old browsers */
+ background: linear-gradient( rgba(201, 75, 75, 0.5), rgba(75, 19, 79, 0.5)), url(/images/header.jpg);
 color: $fg;
-position: relative;
+//position: relative;
  height: 80vh;
  padding: 3rem;
  display: flex;
  flex-direction: column;
  //align-items: start;
  justify-content: center;
+ background-size: contain;
+ background-repeat: no-repeat;
   }
   .skew
   {

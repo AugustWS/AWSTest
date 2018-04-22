@@ -2,7 +2,7 @@
 # Site
 
 title: August
-url: ""
+url: "www.augustwebsolutions.com"
 baseurl: ""
 google_analytics_key: ""
 google_maps_javascript_api_key:
@@ -10,16 +10,15 @@ disqus_shortname:
 newsletter_action: ""
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /logo.png
-description: Spiritual journeys to find the divine within.
-
+description: web development, seo, branding and digital marketting.
 
 paginate: 10
 paginate_path: "/advice/:num/"
 
-# collections:
-#   guides:
-#     output: true
-#     permalink: /guides/:path/
+collections:
+  services:
+    output: true
+    permalink: /services/:path/
 #   journeys:
 #     output: true
 #     permalink: /journeys/:path/

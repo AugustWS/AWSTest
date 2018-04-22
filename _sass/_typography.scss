@@ -1,5 +1,9 @@
 /* Basic */
-
+*
+{
+ -moz-box-sizing: border-box;
+  box-sizing:border-box;
+}
 	// MSIE: Required for IEMobile.
 	@-ms-viewport {
 		width: device-width;

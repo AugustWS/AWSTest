@@ -1,9 +1,11 @@
 ---
-title: Branding
+title: Search Engine Optimization
 sub-title: Turn your business into a Brand.Build a consistent experience that your customer identifies as You.
 description: Build an identity system for your business- everything from logo design to brand guidelines.
 min-price: Rs 15k
-class: $bg-Yellow
+cta: You in?    
+bg-color: white 
+fg-color: primary 
 pain-points:
  - brand recall and recognition
  - consistent typography

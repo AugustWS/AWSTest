@@ -1,120 +1,5 @@
-// Reusable styles..Delete the ones not needed
 
 
-///
-/// Story by Pixelarity
-/// pixelarity.com | hello@pixelarity.com
-/// License: pixelarity.com/license
-///
-.bubble
-{
-position:absolute;
-width:20px;
-height: 20px;
-opacity: .7;
-background: chartreuse;
-transform: translateX(0px) translateY(0px) translateZ(0px); 
-transition: opacity 600ms ease-in-out 0s, transform 600ms ease-in-out 0s;
-}
-
-.triangles
-{ 
-position:absolute;
-width:100%;
-height: 100%;
-z-index: -3;
-opacity: 1; 
-transition: all 2s ease-in;
-}
-
-ul.triangles li{
-list-style:none;
-left:10px;
-bottom: -150px;
-display:block;
-width: 0; 
-height: 0; 
-border-left: 50px solid transparent; 
-border-right: 50px solid transparent;
-border-bottom: 50px solid $bg-linear-right;
-animation: bubble 20s linear infinite;
- }
-
- ul.triangles li:nth-child(1)
- {
-    border-left: 300px solid transparent; 
-    border-right: 300px solid transparent;
-    border-bottom: 300px solid #ffffff;
-    opacity: 0.7;
-    animation-delay: 0s; 
-    position: absolute;
-    left:20%;
- }
-
- ul.triangles li:nth-child(2)
- {
-    border-left: 400px solid transparent; 
-    border-right: 400px solid transparent;
-    border-bottom: 400px solid #ffffff;
-    opacity: 0.3;
-    animation-delay: 2s; 
-    position: absolute;
-    left:80%;
- }
- ul.triangles li:nth-child(4)
- {
-    border-left: 600px solid transparent; 
-    border-right: 600px  solid transparent;
-    border-bottom: 600px  solid #ffffff;
-    opacity: 0.3;
-    animation-delay: 5s; 
-    position: absolute;
-    left:60%;
- }
- ul.triangles li:nth-child(5)
- {
-    border-left: 50px solid transparent; 
-    border-right: 50px  solid transparent;
-    border-bottom: 50px  solid ffffff;
-    opacity: 0.3;
-    animation-delay: 3s; 
-    position: absolute;
-    left:60%;
- }
- .triangles li:nth-child(4)
- {
-    border-left: 60px solid transparent; 
-    border-right: 60px  solid transparent;
-    border-bottom: 60px  solid ffffff;
-    opacity: 0.6;
-    animation-delay: 5s; 
-    position: absolute;
-    left:40%;
- }
- .triangles li:nth-child(4)
- {
-    border-left: 50px solid transparent; 
-    border-right: 50px  solid transparent;
-    border-bottom: 50px  solid ffffff;
-    opacity: 0.3;
-    animation-delay: 4s; 
-    position: absolute;
-    left:30%;
- }
-
- @keyframes bubble
- {
-     from
-     {
-         transform :translateY(10) rotate(0);
-         opacity: 1;
-     }
-     to
-     {
-        transform :translateY(-1000px) rotate(720deg);
-         opacity: 0.4; 
-     }
- }
 
 .margin-small
 {
@@ -134,14 +19,34 @@ animation: bubble 20s linear infinite;
     cursor:pointer;
     text-decoration: none;
     background: transparent;
-    border-radius: 6px;
+    border-radius: 3.92857em;
+}
+.button.special {
+    box-shadow: 0 0 3em 0 rgba(0, 0, 0, 0.1);
+    background-color: #5ab7bd;
+    color: #ffffff !important;
+}
+.box-info
+{
+  font-size: 1.2em;
+  padding :20px;
+  width:300px;
+  height: 300px;
+  
+    
 }
 .buttonOutline
-{
-   
+{   
     border: 1px solid $fg;
     
     color:$fg;
+    
+}
+.buttonOutline-primary
+{   
+    border: 1px solid $brand-primary;
+    
+    color:$brand-primary;
     
 }
 .align-left {
@@ -196,7 +101,8 @@ animation: bubble 20s linear infinite;
 
 .padding-top-bottom
 {
-    padding:1.5em 0;
+   
+    padding:1.5em 0em;
 }
 
 
@@ -225,13 +131,22 @@ animation: bubble 20s linear infinite;
 .bg-main {
     background-color: #fff;
 }
+.bg-gradient {
+    background: $background-linear;
+}
 
 .txt-white {
     color: #FFFFFF;
 }
+.txt-fg {
+    color: $fg;
+}
 
 .txt-gray {
     color: #ddd !important;
+}
+.txt-primary {
+    color: $brand-primary !important;
 }
 
 .bg-black {
@@ -243,11 +158,49 @@ animation: bubble 20s linear infinite;
 }
 
 .bg-white {
-    background-color: #FFFFFF;
+    background-color: rgba(255,255,255,0.5)
 }
 
-.de-bg-primary {
+.bg-primary {
     background-color: $brand-primary;
+    opacity: 0.8;
+}
+.bg-yellow
+{
+    background-color:$bg-yellow;
+    opacity: 0.8;
+   // transition: border 1s ease-in;
+}
+// .bg-yellow:hover
+// {
+//    border: 5px solid $bg-yellow;
+//    color:   $fg-light-bg;
+//    background: transparent;
+
+// }
+
+.bg-pink
+{
+    background-color:$bg-pink;
+
+}
+.bg-pink
+{
+    background-color:$bg-pink;
+
+}
+.bg-coral
+{
+    background-color:$bg-coral;
+
+}
+.bg-golden
+{
+    background-color: $bg-golden;
+}
+.bg-coolBlue
+{
+    background-color: $bg-coolBlue;
 }
 
 .bg-secondary {
@@ -361,23 +314,25 @@ hr {
 
 .box {
     padding: 3em  0.3em;
-    background-color: #fff;
-    color: $fg-light-bg;
+    // background-color: transparent;
+    // color: $fg;
     margin-bottom: $element-margin;
-    position: relative;
+    // position: relative;
+    // -moz-box-sizing: border-box;
+    // box-sizing:border-box;
    
     // display: flex;
     // justify-content: center;
     
 
-    &:before, &:after {
-        content: '';
-        display: block;
-        height: 4px;
-        position: absolute;
-        right: 0;
-        width: 100%;
-    }
+    // &:before, &:after {
+    //     content: '';
+    //     display: block;
+    //     height: 4px;
+    //     position: absolute;
+    //     right: 0;
+    //     width: 100%;
+    // }
 
     &:before {
         top: 0;
@@ -426,3 +381,40 @@ hr {
         margin-top: -3em;
     }
 }
+.border-right-thin {
+    border-right:5px solid $bg-yellow;
+}
+// #services
+// {
+//     position: absolute;
+//     top:0;
+//     left:0;
+// }
+
+
+// section{
+//     position: relative;
+//     content: "";
+//     width: 100%;
+//     height: 500px;
+//     z-index: -1000;
+//     background: linear-gradient(160deg,#02ccba,#aa7ecd);
+//     -webkit-transform-origin: left bottom;
+//     transform-origin: left bottom;    
+//     top: 80%;
+//     left: 0;
+// }
+// section::before
+// {
+//     content: "";
+// width: 100%;
+// height: 660px;
+// z-index: -1000;
+// background: linear-gradient(160deg,#02ccba,#aa7ecd);
+// -webkit-transform-origin: left bottom;
+// transform-origin: left bottom;
+// position: absolute;
+// top: 0;
+// left: 0;
+// }
+

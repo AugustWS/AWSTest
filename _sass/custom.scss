@@ -1,5 +1,161 @@
+// #main
+// {
+//   position:relative;
+// }
+.showcase
+{
+  position: relative;
+}
+.rotated-box
+{
+  width: 700px;
+  height: 1000px;
+  border-radius:6px;
+  transform: rotate(45deg);
+  position: absolute; 
+  z-index:-10;
+  opacity: 0.7;
+
+&.pink
+{
+  transform: rotate(40deg);  
+  bottom:30%;
+  right:60%;
+  z-index:-10;
+  background-color:$bg-pink;
+ 
+}
+&.yellow
+{
+  transform: rotate(40deg);
+  top:40%;
+  left:-30%;
+  z-index:-10;
+  background-color:$bg-yellow;
+
+}
+&.coolBlue
+{
+  transform: rotate(40deg);
+  top:auto;
+  bottom:30px;
+  right:-30%;
+  z-index:-10;
+  background-color:$bg-coolBlue;
+
+}
+&.royalBlue
+{
+  transform: rotate(90deg);
+  bottom:40%;
+  left:-30%;
+  z-index:-10;
+  background-color:$bg-royalBlue;
+
+}
+}
+.triangles
+{ 
+position:absolute;
+width:100%;
+height: 100%;
+z-index: -3;
+opacity: 1; 
+transition: all 2s ease-in;
+}
+
+ul.triangles li{
+list-style:none;
+left:10px;
+bottom: -250px;
+display:block;
+width: 0; 
+opacity: 0.7;
+height: 0; 
+border-left: 50px solid transparent; 
+border-right: 50px solid transparent;
+border-bottom: 50px solid $bg-golden;
+animation: bubble 10s linear infinite;
+ }
+
+ ul.triangles li:nth-child(1)
+ {
+    border-left: 100px solid transparent; 
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid $bg-coral;
+    opacity: 0.7;
+    animation-delay: 0s; 
+    position: absolute;
+    left:20%;
+ }
+
+ ul.triangles li:nth-child(2)
+ {
+    border-left: 100px solid transparent; 
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid $bg-pink;
+    opacity: 0.3;
+    animation-delay: 2s; 
+    position: absolute;
+    left:80%;
+ }
+ ul.triangles li:nth-child(4)
+ {
+    border-left: 50px solid transparent; 
+    border-right: 50px  solid transparent;
+    border-bottom: 50px  solid $bg-coolBlue;
+    opacity: 0.3;
+    animation-delay: 5s; 
+    position: absolute;
+    left:10%;
+ }
+ ul.triangles li:nth-child(5)
+ {
+    border-left: 50px solid transparent; 
+    border-right: 50px  solid transparent;
+    border-bottom: 50px  solid $bg-yellow;
+    opacity: 0.3;
+    animation-delay: 3s; 
+    position: absolute;
+    left:50%;
+ }
+ .triangles li:nth-child(4)
+ {
+    border-left: 60px solid transparent; 
+    border-right: 60px  solid transparent;
+    border-bottom: 60px  solid $bg-linear-right;
+    opacity: 0.6;
+    animation-delay: 5s; 
+    position: absolute;
+    left:40%;
+ }
+ .triangles li:nth-child(4)
+ {
+    border-left: 50px solid transparent; 
+    border-right: 50px  solid transparent;
+    border-bottom: 50px  solid $bg-yellow;
+    opacity: 0.3;
+    animation-delay: 4s; 
+    position: absolute;
+    left:30%;
+ }
+
+ @keyframes bubble
+ {
+     from
+     {
+         transform :translateY(10) rotate(0);
+         opacity: 1;
+     }
+     to
+     {
+        transform :translateY(-1000px) rotate(720deg);
+         opacity: 0.4; 
+     }
+ }
+
 .wrapper {
-  width: 80rem;
+  width: 70rem;
   max-width: calc(100% - 7rem);
   margin: 0 auto;
   padding: 2.5rem 2rem;
@@ -14,27 +170,46 @@
 
 .sk-heroImage
 {
-  background: linear-gradient( rgba(201, 75, 75, 0.5), rgba(75, 19, 79, 0.5)),url("images/header.jpg");
-  // background-image: url("/images/header.jpg");
-  height: 500px;
-  background-size: cover;
+  
+  width: auto;
+  max-width: calc(100% - 7rem);
+  margin: 0 auto;
+  height: 500px;;
+  padding: 2.5rem 2rem;
   display: flex;
   flex-direction: column;
   //align-items: start;
   justify-content: center;
-  background-repeat: no-repeat;
-  color: $fg;
-  opacity: 0.9;
+ 
+ 
 }
-.gradient-skew-down
-{
-  background: $background-linear;
-  transform: skewY(2deg)
-}
+// .gradient-skew-down
+// {
+//   position: absolute;
+//     content: "";
+//     width: 100%;
+//     height: 500px;
+//     z-index: -1000;
+//     background:  $background-linear;
+//     -webkit-transform-origin: right bottom;
+//     transform-origin: right bottom;    
+//     top: 40%;
+//     left: 0;
+//     transform: skewY(8deg);    
+
+//     &.alt
+//     {
+//       -webkit-transform-origin: left bottom;
+//       transform-origin: left bottom;   
+//       transform: skewY(8deg);    
+//       top: 70%;
+//     left: 0;
+//     }
+// }
 .gradientBackground
 {
-
-background: $background-linear;
+  background: $background-linear;  
+  color: $fg;
 }
 .pull-top
 {
@@ -49,8 +224,7 @@ background: $background-linear;
   opacity: 0.9;
   // background: url(/images/header.jpg);
 //background: #ad5389;  /* fallback for old browsers */
- background: linear-gradient( rgba(201, 75, 75, 0.5), rgba(75, 19, 79, 0.5)),url("../images/header2.jpg");
-color: $fg;
+
 //position: relative;
  height: 80vh;
  padding: 3rem;
@@ -66,7 +240,11 @@ color: $fg;
     position: relative;
   
   }
-  .skew:before
+  .skewAlt
+  {
+    position: relative;
+  }
+  .skew:before, .skewAlt:after
   {
     content:'';
     height: 100px;
@@ -74,21 +252,36 @@ color: $fg;
     position: absolute;
     top:-48px;
     left:0;
+    border-top: 5px solid $brand-primary;
     background: $bg;
     transform: skewY(8deg);    
    
 
   }
-  .skew:after
+  .skewAlt:after
+  {
+    transform: skewY(-8deg);  
+    border-bottom: 5px solid $brand-primary; 
+    border-top: 0px solid $brand-primary; 
+  }
+  .skew:after,.skewAlt:before
   {
     content:'';
-    height: 100px;
+    height:100px;
     width:50%;
     position: absolute;
     top:-48px;
     right:0;
     background: $bg;
-    transform: skewY(-8deg);  
+    transform: skewY(-8deg); 
+    border-top: 5px solid $brand-primary; 
+  }
+  .skewAlt:before
+  {
+    transform: skewY(8deg);   
+    border-bottom: 5px solid $brand-primary; 
+    border-top: 0px solid $brand-primary; 
+   
   }
   .sk-Jumbotron h1 {
     font-size: 4rem;
@@ -102,6 +295,11 @@ color: $fg;
    
   }
   
+
+  // section
+  // {
+  //   position: relative;
+  // }
 
 
 

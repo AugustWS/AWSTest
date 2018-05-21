@@ -19,6 +19,9 @@ collections:
   services:
     output: true
     permalink: /services/:path/
+  work:
+    output: true
+    permalink: /work/:path/  
 #   journeys:
 #     output: true
 #     permalink: /journeys/:path/
@@ -39,7 +42,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: post
+      layout: default
       _options:
         content:
           width: 960

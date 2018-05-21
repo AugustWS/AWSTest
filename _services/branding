@@ -1,5 +1,14 @@
 ---
-layout: services 
+title: Branding
+sub-title: Turn your business into a Brand.Build a consistent experience that your customer identifies as You.
+description: Build an identity system for your business- everything from logo design to brand guidelines.
+min-price: Rs 15k
+cta: You in?    
+bg-color: yellow 
+fg-color: primary 
+why:
+ - brand recall and recognition
+ - consistent typography
 ---
 features:
  -title : Logo Design

@@ -1,9 +1,13 @@
 ---
 layout: default
 title: Why August
+sub-title: We make websites, optimize them for search and market them. Yup. We do
+  it all!
+description : about our work and stuff like that.  
 permalink: /about/
 ---
 <div class="verticle-line"></div>
+
 <section id="freeAudit">
         <div class="pure-g  wrapper box-shadow-large center bordered-top">
                 <div class="pure-u-1">
@@ -15,6 +19,17 @@ permalink: /about/
         </div>
 </section>
 <div class="verticle-line"></div>
+<div class="wrapper box-shadow-large bordered-top">
+                        <div class="pure-g  align-center ">
+                                <div class="pure-u-1 ">
+                                        <h1 class="text-primary ">Our Services</h1>
+                                        <h4>We make websites, optimize them for search and market them. Yup. We do it all!
+                                        </h4>                                      
+                                </div>                              
+                        </div>
+                        {% include allServices.html %}
+                       
+</div>
 <section id="freeAudit">
         <div class="pure-g  wrapper box-shadow-large center bordered-top">
                 <div class="pure-u-1">

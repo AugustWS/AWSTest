@@ -1,0 +1,15 @@
+<div class="pure-g align-center">
+
+        {% for post in site.posts %}   
+        
+        
+        <div class="pure-u-1-3 box box-shadow  bg-{{post.bg-color}}">
+            <h4> <a href="{{ site.baseurl }}{{ post.url }}" class="fg-{{post.fg-color}}">{{ post.title }}</a>  </h4>
+         
+        </div>
+    
+        <div class="pure-u-2-3 box box-shadow ">
+            {{ post.description }}</div>            
+        {% endfor %}
+    </div>
+    

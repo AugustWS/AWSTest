@@ -1,6 +1,11 @@
 ---
-layout: post
+bg-color: yellow 
+fg-color: primary 
+why:
+ - brand recall and recognition
+ - consistent typography
 title:  "Starter Kit!"
+description: Build an identity system for your business- everything from logo design to brand guidelines.
 date:   2018-03-23 02:15:54 +0530
 categories: jekyll update
 ---

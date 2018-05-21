@@ -19,7 +19,7 @@ layout: compress
                     <div class="pure-u-1 sk-heroImage ">
                             <h1 class="heavy-text txt-{{page.fg-color}}">{{ page.title }}
                             </h1>
-                            <h3>{{ page.sub-title }}</h3>
+                            <h3 class=" txt-{{page.fg-color}}">{{ page.sub-title }}</h3>
                             <!-- <p>We design and develop wesbites</p>
                     <p>Then we rank your website</p>
                     <p>We brand your company</p>
@@ -33,13 +33,22 @@ layout: compress
             <div class="verticle-line"></div>
             
         <section id ="main">
+                <div class="showcase">
+                        <div class="rotated-box yellow"></div>
+                        <div class="rotated-box pink"></div>
                 
             {{ content }}
+            <div class="rotated-box coolBlue"></div>
+            <div class="rotated-box pink"></div>
+        <div class="rotated-box yellow"></div>
+        </div>
         </section>
        <div class="verticle-line"></div>
         <section id="enquiry">
-        <div class="wrapper  txt-white bg-yellow box-shadow-large  bordered-top pure-g heavy-text">
+ 
+        <div class="wrapper  txt-white bg-yellow bg-{{page.bg-color }}  box-shadow-large  bordered-top pure-g heavy-text">
          <div class="pure-u-1-3">
+          
             {% include enquiry.html %}
         </div>
         </div>                 
@@ -48,7 +57,7 @@ layout: compress
         <div class="verticle-line"></div>
         <div class="verticle-line"></div>
         <div class="skewAlt"></div>
-         
+      
          <section class="pure-g align-center bg-{{page.bg-color }} ">
                     <div class="pure-u-1">
                             <footer>

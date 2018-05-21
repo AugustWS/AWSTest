@@ -1,6 +1,8 @@
 ---
 title: Contact Us
 description: Impressed, aren't you? Come drop us a line below
+sub-title: We make websites, optimize them for search and market them. Yup. We do
+  it all!
 cta: You in?    
 bg-color: pink    
 fg-color: primary 

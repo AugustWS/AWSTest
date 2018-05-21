@@ -1,12 +1,6 @@
 ---
-title: Branding
-sub-title: Turn your business into a Brand.Build a consistent experience that your customer identifies as You.
-description: Build an identity system for your business- everything from logo design to brand guidelines.
-min-price: Rs 15k
-class: $bg-Yellow
-pain-points:
- - brand recall and recognition
- - consistent typography
+layout: services 
+---
 features:
  -title : Logo Design
  -description: We work collaboratively to create the most truthful, compelling, and beautiful image of your brand.  
@@ -14,4 +8,7 @@ features:
  -description: We work collaboratively to create the most truthful, compelling, and beautiful image of your brand.  
  -title : Business Stationary
  -description: We work collaboratively to create the most truthful, compelling, and beautiful image of your brand.  
----
+
+
+packages:
+      <h4>Something</h4>

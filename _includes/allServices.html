@@ -1,0 +1,26 @@
+<div class="pure-g align-center">
+
+    {% for service in site.services %}   
+    
+    
+    <div class="pure-u-1-3 box box-shadow  {{service.class}}">
+        <h4> <a href="{{ site.baseurl }}{{ service.url }}">{{ service.title }}</a>  </h4>
+     
+    </div>
+
+    <div class="pure-u-2-3 box box-shadow ">
+        {{ service.description }}</div>            
+    {% endfor %}
+</div>
+<!-- 
+<div class="pure-g align-center">
+    <div class="pure-u-1-3 box box-shadow text-primary bg-yellow">
+            <h4>Web Design
+                    <br>and
+                    <br>Web Development</h4>
+    </div>
+
+    <div class="pure-u-2-3 box box-shadow ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus inventore quibusdam nesciunt,
+            odio corporis dolores est soluta quis sint saepe?</div>
+
+</div> -->

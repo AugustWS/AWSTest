@@ -1,18 +1,27 @@
 ---
-layout: page
-title: About
+layout: default
+title: Why August
 permalink: /about/
 ---
-
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+<div class="verticle-line"></div>
+<section id="freeAudit">
+        <div class="pure-g  wrapper box-shadow-large center bordered-top">
+                <div class="pure-u-1">
+                        <h2 class="align-center text-primary">Why work with us?</h2>
+                <!-- </div>
+                <div class="pure-u-2-3 float-right"> -->
+                       August -we grow when you grow
+                </div>
+        </div>
+</section>
+<div class="verticle-line"></div>
+<section id="freeAudit">
+        <div class="pure-g  wrapper box-shadow-large center bordered-top">
+                <div class="pure-u-1">
+                        <h2 class="align-center text-primary">Get a free Audit for your website now!</h2>
+                <!-- </div>
+                <div class="pure-u-2-3 float-right"> -->
+                        {% include quickAudit.html %}
+                </div>
+        </div>
+</section>

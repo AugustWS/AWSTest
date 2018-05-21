@@ -1,13 +1,13 @@
 ---
 - name: Home
-  link: /
+  link: "/"
 - name: About
-  link: {{site.baseurl}}/about/
+  link: "/about/""
 - name: Contact
-  link: /contact/
+  link: "/contact/"
 - name: Work
-  link: /work/
+  link: "/work/"
 - name: Services
-  link: /services/
+  link: "/services/"
 - name: Blog
-  link: /blog/   
+  link: "/blog/"  

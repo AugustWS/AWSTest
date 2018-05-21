@@ -1,7 +1,12 @@
 <nav>
-    {% for item in site.data.navbar %}
-      <a href="{{ item.link }}">{{ item.name }}</a>
-    {% endfor %}
+    {% for link in site.data.navbar %}
+    {% assign class = "" %}
+  
+    {% if link.link == page.url %}
+      {% assign class = class | append: " active" %}
+    {% endif %}
+    <a href="{% include relative-src.html src=link.link %}" class="{{ class }}">{{ link.name }}</a>
+  {% endfor %}
   </nav>
 
 

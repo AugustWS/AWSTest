@@ -6,12 +6,12 @@ fields:
   label: Bg color
   type: text
   hidden: false
-  default: ''
+  default: yellow
 - name: fg-color
   label: Fg color
   type: text
   hidden: false
-  default: ''
+  default: primary
 - name: why
   label: Why
   type: list
@@ -21,12 +21,12 @@ fields:
   label: Title
   type: text
   hidden: false
-  default: ''
+  default: page title
 - name: description
   label: Description
   type: text
   hidden: false
-  default: ''
+  default: page description
 - name: date
   label: Date
   type: datetime
@@ -36,14 +36,16 @@ fields:
   label: Sub title
   type: text
   hidden: false
-  default: ''
+  default: dfsfsfs
 - name: cta
   label: Cta
   type: text
   hidden: false
-  default: ''
+  default: sdfsd
 - name: min-price
   label: Min price
   type: text
   hidden: false
-  default: ''
+  default: '900'
+  config:
+    required: true

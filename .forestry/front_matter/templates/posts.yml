@@ -69,7 +69,15 @@ fields:
 - type: textarea
   name: subtitle
   label: SubTitle
-  description: Enter a catchy description for the post
+  description: Enter a catchy few words for the post
+- type: tag_list
+  name: tags
+  label: Tags
+  description: Enter the tags that this post will fall under
+- type: list
+  name: category
+  label: Category
+  description: Enter the category of this post
 pages:
 - _posts/2018-05-23-awdada.md
 - _posts/2018-05-23-asdadads.md

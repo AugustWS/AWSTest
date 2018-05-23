@@ -1,14 +1,23 @@
 ---
 title: Branding
-sub-title: Turn your business into a Brand.Build a consistent experience that your customer identifies as You.
-description: Build an identity system for your business- everything from logo design to brand guidelines.
+sub-title: Turn your business into a Brand.Build a consistent experience that your
+  customer identifies as You.
+description: Build an identity system for your business- everything from logo design
+  to brand guidelines.
 min-price: Rs 15k
-cta: You in?    
-bg-color: yellow 
-fg-color: primary 
+cta: You in?
+bg-color: yellow
+fg-color: primary
 why:
- - brand recall and recognition
- - consistent typography
+- brand recall and recognition
+- consistent typography
+date: 2018-05-22 20:51:32 +0000
+pricepackage:
+- Package_Name: Starter
+  availablefeatures:
+  - asdadad
+  price: 4500
+tags_for_the_page: []
 ---
 features:
  -title : Logo Design

@@ -19,3 +19,5 @@ fields:
   label: IsFeatured
   description: Will this be shown on home page?
 - type: image_gallery
+pages:
+- _work/google.md

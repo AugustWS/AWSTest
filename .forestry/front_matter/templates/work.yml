@@ -1,0 +1,21 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: projname
+  label: ProjName
+  description: Enter the name of your proj
+- type: text
+  name: cta
+  label: CTA
+  description: Link of the website
+- type: textarea
+  name: customerfeedback
+  label: CustomerFeedback
+  description: Feed back for this project
+- type: boolean
+  name: isfeatured
+  label: IsFeatured
+  description: Will this be shown on home page?
+- type: image_gallery

@@ -49,3 +49,5 @@ fields:
   default: '900'
   config:
     required: true
+pages:
+- _services/asdasd.md

@@ -1,7 +1,7 @@
 ---
 layout: post
-background_image_path: 
-image: 
+background_image_path: ''
+image: ''
 _options:
   content:
     width: 960
@@ -11,3 +11,4 @@ _comments:
 title: awdada
 date: 2018-05-23 15:58:09 +0000
 ---
+asdadadadaadd

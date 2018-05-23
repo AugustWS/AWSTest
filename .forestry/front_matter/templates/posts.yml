@@ -2,16 +2,16 @@
 hide_body: false
 is_partial: false
 fields:
-- name: layout
-  label: Layout
-  type: text
-  hidden: false
-  default: post
 - name: background_image_path
   label: Background image path
   type: text
   hidden: false
   default: 
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: post
 - name: image
   label: Image
   type: text
@@ -50,6 +50,26 @@ fields:
     default: ''
   hidden: false
   default: 
+- type: text
+  name: author
+  label: Author
+  description: Who wrote this post
+- type: boolean
+  label: IsFeatured
+  name: isfeatured
+  description: Will this be in the featured list?
+- type: text
+  name: title
+  label: title
+  description: title of the post
+- type: text
+  name: subtitle
+  label: subTitle
+  description: A catchy desc
+- type: textarea
+  name: subtitle
+  label: SubTitle
+  description: Enter a catchy description for the post
 pages:
 - _posts/2018-05-23-awdada.md
 - _posts/2018-05-23-asdadads.md

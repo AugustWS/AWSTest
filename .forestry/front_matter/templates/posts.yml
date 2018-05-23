@@ -51,5 +51,6 @@ fields:
   hidden: false
   default: 
 pages:
+- _posts/awdada.md
 - _posts/2018-05-23-asdadads.md
 - _posts/2018-05-23-fhgfhgfh.md

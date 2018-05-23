@@ -1,0 +1,49 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- name: bg-color
+  label: Bg color
+  type: text
+  hidden: false
+  default: ''
+- name: fg-color
+  label: Fg color
+  type: text
+  hidden: false
+  default: ''
+- name: why
+  label: Why
+  type: list
+  hidden: false
+  default: ''
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: description
+  label: Description
+  type: text
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: sub-title
+  label: Sub title
+  type: text
+  hidden: false
+  default: ''
+- name: cta
+  label: Cta
+  type: text
+  hidden: false
+  default: ''
+- name: min-price
+  label: Min price
+  type: text
+  hidden: false
+  default: ''

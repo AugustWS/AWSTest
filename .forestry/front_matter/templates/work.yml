@@ -3,8 +3,8 @@ hide_body: false
 is_partial: false
 fields:
 - type: text
-  name: projname
-  label: ProjName
+  name: title
+  label: title
   description: Enter the name of your proj
 - type: text
   name: cta

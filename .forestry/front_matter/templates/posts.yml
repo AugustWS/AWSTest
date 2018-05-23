@@ -50,3 +50,5 @@ fields:
     default: ''
   hidden: false
   default: 
+pages:
+- _posts/fhgfhgfh.md

@@ -64,7 +64,7 @@ fields:
   description: title of the post
 - type: text
   name: subtitle
-  label: subTitle
+  label: Description
   description: A catchy desc
 - type: textarea
   name: subtitle

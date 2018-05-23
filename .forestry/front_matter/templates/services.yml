@@ -2,6 +2,16 @@
 hide_body: false
 is_partial: false
 fields:
+- name: bg-color
+  label: Bg color
+  type: text
+  hidden: false
+  default: ''
+- name: fg-color
+  label: Fg color
+  type: text
+  hidden: false
+  default: ''
 - name: why
   label: Why
   type: list
@@ -22,8 +32,47 @@ fields:
   type: datetime
   hidden: false
   default: ''
-- name: layout
-  label: Layout
+- name: sub-title
+  label: Sub title
   type: text
   hidden: false
   default: ''
+- name: cta
+  label: Cta
+  type: text
+  hidden: false
+  default: ''
+- name: min-price
+  label: Min price
+  type: text
+  hidden: false
+  default: ''
+- type: tag_list
+  name: tags_for_the_page
+  label: Tags for the page
+  description: Add tags that pertain to this page
+- type: field_group_list
+  name: pricepackage
+  label: PricePackage
+  description: Enter the prices for each type of package for the services you provide
+  fields:
+  - type: text
+    name: Package_Name
+    label: PackageName
+    description: Enter the name of the package(gold, platinum etc)
+    config:
+      required: true
+  - type: list
+    name: availablefeatures
+    label: AvailableFeatures
+    description: Features available under this package
+  - type: number
+    name: price
+    label: PackagePrice
+    description: Enter the price for this package
+    config:
+      min: '1'
+      max: '100000000'
+      required: true
+pages:
+- _services/branding

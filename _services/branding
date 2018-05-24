@@ -13,20 +13,14 @@ why:
 - consistent typography
 date: 2018-05-22 20:51:32 +0000
 pricepackage:
+- Package_Name: xZx
+  availablefeatures:
+  - sadadasd
+  price: 6777777
 - Package_Name: Starter
   availablefeatures:
   - asdadad
   price: 4500
 tags_for_the_page: []
 ---
-features:
- -title : Logo Design
- -description: We work collaboratively to create the most truthful, compelling, and beautiful image of your brand.  
- -title : Style guidelines
- -description: We work collaboratively to create the most truthful, compelling, and beautiful image of your brand.  
- -title : Business Stationary
- -description: We work collaboratively to create the most truthful, compelling, and beautiful image of your brand.  
-
-
-packages:
-      <h4>Something</h4>
+Branding wala content

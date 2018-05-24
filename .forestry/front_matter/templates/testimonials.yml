@@ -31,4 +31,5 @@ fields:
   label: tags
   description: SEO/SEM/DM/branding
 pages:
+- _testimonials/gshgjs.md
 - testimonials.md

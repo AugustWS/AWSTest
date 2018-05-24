@@ -79,5 +79,6 @@ fields:
   label: Category
   description: Enter the category of this post
 pages:
+- _posts/top-5-reasons-why-you-need-seo-on-your-webite.md
 - _posts/2018-05-23-asdadads.md
 - _posts/2018-05-23-fhgfhgfh.md

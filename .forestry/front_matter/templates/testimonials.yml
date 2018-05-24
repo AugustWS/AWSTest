@@ -30,3 +30,5 @@ fields:
   name: tags
   label: tags
   description: SEO/SEM/DM/branding
+pages:
+- testimonials.md

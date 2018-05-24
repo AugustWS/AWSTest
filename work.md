@@ -1,5 +1,5 @@
 ---
-title: Work work
+title: 'Work '
 description: Websites, SEO,SEM, Digital marketing, branding
 sub-title: We make websites, optimize them for search and market them. Yup. We do
   it all!

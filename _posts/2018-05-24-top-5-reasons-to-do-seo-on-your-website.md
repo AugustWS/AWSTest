@@ -16,17 +16,20 @@ subtitle: ''
 tags: []
 category: []
 ---
-                                                                                                                                                                                                                                                                                                                                                         23/05/2018
+23/05/2018
 
  
 
 Top 5 reasons why you need SEO for your website?
 
-* 1.      SEO will Boost your website traffic
-* 2.      Increase of peoples trust in your Brand
-* 3.      Improved results than ads ROI
-* 4.      Tracking your competitors
-* 5.      SEO is not like ads
-* 6.      SEO will magnify market presence
+1\.      SEO will Boost your website traffic
 
- 
+2\.      An Increase of peoples trust in your Brand
+
+3\.      Improved results than ads ROI
+
+4\.      Tracking your competitors
+
+5\.      SEO is not like ads
+
+6\.      SEO will magnify your market presence

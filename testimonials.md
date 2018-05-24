@@ -11,7 +11,7 @@ tags: []
 layout: default
 background_image_path: ''
 ---
-<div class="wrapper box-shadow-large bordered-top"> <div class="pure-g  align-center "> <div class="pure-u-1 "> <h1 class="text-primary ">Our Work</h1> <h4>Look at all the lovely people we had the chance to work with! </h4>  
+<div class="wrapper box-shadow-large bordered-top"> <div class="pure-g  align-center "> <div class="pure-u-1 "> <h1 class="text-primary ">Our Testimonials</h1> <h4>Look at what people say about Us </h4>  
 </div>  
 </div> {% include allTestimonials.html featured=true %}
 

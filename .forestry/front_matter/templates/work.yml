@@ -19,5 +19,9 @@ fields:
   label: IsFeatured
   description: Will this be shown on home page?
 - type: image_gallery
+- type: textarea
+  name: description
+  label: Description
+  description: Most challenging keyword search
 pages:
 - _work/google.md

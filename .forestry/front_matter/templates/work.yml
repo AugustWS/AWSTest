@@ -18,6 +18,7 @@ fields:
   name: isfeatured
   label: IsFeatured
   description: Will this be shown on home page?
+  default: true
 - type: image_gallery
 - type: textarea
   name: description

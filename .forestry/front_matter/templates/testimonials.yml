@@ -1,0 +1,32 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: 'Name '
+  name: name
+  description: who wrote this
+- type: text
+  name: link
+  label: Link
+  description: do they have a website
+- type: text
+  name: location
+  label: location
+  description: location of the client
+- type: text
+  name: isfeatured
+  label: IsFeatured
+  description: home page
+- type: file
+  name: image
+  label: image
+  description: Client image
+- type: text
+  name: project_name
+  label: Project Name
+  description: name of the project
+- type: tag_list
+  name: tags
+  label: tags
+  description: SEO/SEM/DM/branding

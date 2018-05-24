@@ -22,6 +22,9 @@ collections:
   work:
     output: true
     permalink: /work/:path/  
+  testimonials:
+    output: true
+    permalink: /testimonials/:path/    
 #   journeys:
 #     output: true
 #     permalink: /journeys/:path/

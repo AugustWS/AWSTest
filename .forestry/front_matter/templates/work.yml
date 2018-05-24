@@ -23,5 +23,9 @@ fields:
   name: description
   label: Description
   description: Most challenging keyword search
+- type: text
+  name: subtitle
+  label: Subtitle
+  description: WORK
 pages:
 - _work/google.md

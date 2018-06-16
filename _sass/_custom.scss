@@ -8,13 +8,13 @@
 }
 .rotated-box
 {
-  width: 700px;
-  height: 1000px;
+  width:40%;
+  height:50%;
   border-radius:6px;
-  transform: rotate(45deg);
+  // transform: rotate(45deg);
   position: absolute; 
   z-index:-10;
-  opacity: 0.7;
+  opacity: 0.8;
 
 &.pink
 {
@@ -27,29 +27,31 @@
 }
 &.yellow
 {
-  transform: rotate(40deg);
+  transform: rotate(60deg);
   top:40%;
-  left:-30%;
+  left:0;
   z-index:-10;
   background-color:$bg-yellow;
 
 }
 &.coolBlue
 {
-  transform: rotate(40deg);
+  transform: rotate(30deg);
+  
   top:auto;
-  bottom:30px;
-  right:-30%;
+  bottom:0;
+  left:50%;
   z-index:-10;
   background-color:$bg-coolBlue;
 
 }
 &.royalBlue
 {
-  transform: rotate(90deg);
+  transform: rotate(20deg);
   bottom:40%;
-  left:-30%;
+  left:0;
   z-index:-10;
+
   background-color:$bg-royalBlue;
 
 }

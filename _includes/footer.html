@@ -1,13 +1,16 @@
     <div class="pure-g  txt-white ">
-        <div class="col-md-8">
+        <div class="pure-u-md-3-5 pure-u-sm-1">
             {% for column in site.data.footer %} {% for link in column.links %}
             <a {% if link.new_window %} target="_blank" {% endif %} 
-            href="{% include relative-src.html src=link.link %}">
+            href="{% include relative-src.html src=link.link %}" class=" txt-white ">
              {{ link.name }}
              </a>
             </br>
             {% endfor %} {% endfor %}
         </div>
 
-        <div class="col-md-4">{% include signUp.html %}</div>
+        <div class="pure-u-md-2-5 pure-u-sm-1">
+                <h3>Sign Up!</h3>
+                <p>Subscribe and stay updated about everything August!</p>
+            {% include signUp.html %}</div>
     </div>

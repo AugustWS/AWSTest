@@ -1,4 +1,4 @@
-<nav>
+ <nav >
     {% for link in site.data.navbar %}
     {% assign class = "" %}
   
@@ -7,6 +7,4 @@
     {% endif %}
     <a href="{% include relative-src.html src=link.link %}" class="{{ class }}">{{ link.name }}</a>
   {% endfor %}
-  </nav>
-
-
+  </nav> 

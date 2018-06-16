@@ -14,10 +14,6 @@ fields:
   name: location
   label: location
   description: location of the client
-- type: text
-  name: isfeatured
-  label: IsFeatured
-  description: home page
 - type: file
   name: image
   label: image
@@ -30,5 +26,9 @@ fields:
   name: tags
   label: tags
   description: SEO/SEM/DM/branding
+- type: boolean
+  name: isfeatured
+  label: IsFeatured
+  description: Wil this be shown on home page
 pages:
-- testimonials.md
+- _testimonials/gshgjs.md

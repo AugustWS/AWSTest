@@ -19,3 +19,4 @@ fields:
   default: 
 pages:
 - _services/asss.md
+- testimonials.md

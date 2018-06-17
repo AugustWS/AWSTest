@@ -24,12 +24,14 @@
     box-shadow: 0 1rem 4rem 0.125rem rgba(161, 177, 204, 0.325);
 }
 .button{
-    padding:0.5em 2em;
+    padding:0.5em 1em;
     cursor:pointer;
+    font-size: 1.2em;
+    font-weight: $font-weight-bold;
     text-decoration: none;
     background: transparent;
     border-radius: 3.92857em;
-    margin: 1.5em 1.5em ;
+    margin: 1em 0em ;
 }
 .button.special {
     box-shadow: 0 0 3em 0 rgba(0, 0, 0, 0.1);
@@ -47,14 +49,14 @@
 }
 .buttonOutline
 {   
-    border: 1px solid $fg;
+    border: 2px solid $fg;
     
     color:$fg;
     
 }
 .buttonOutline-primary
 {   
-    border: 1px solid $brand-primary;
+    border: 2px solid $brand-primary;
     
     color:$brand-primary;
     
@@ -99,6 +101,9 @@
 
 .thinBorder {
     border: 1px solid $brand-primary ;
+}
+.thinBorder-fg {
+    border: 1px solid $fg ;
 }
 
 .jumboHeight {

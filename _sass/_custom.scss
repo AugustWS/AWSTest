@@ -171,11 +171,9 @@ animation: bubble 10s linear infinite;
   @media ($small) {
     width: 90em;
     text-align: center;
+    max-width: calc(100% - 2rem);
 	}
-	@media ($xsmall) {
-    width:  90em;
-    text-align: center;
-	}
+
 }
 
 .sk-heroImage

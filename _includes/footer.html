@@ -1,5 +1,5 @@
     <div class="pure-g  txt-white ">
-        <div class="pure-u-md-3-5 pure-u-sm-1">
+        <div class="pure-u-md-2-5 pure-u-sm-1 pure-u-1 padding-top-bottom">
             {% for column in site.data.footer %} {% for link in column.links %}
             <a {% if link.new_window %} target="_blank" {% endif %} 
             href="{% include relative-src.html src=link.link %}" class=" txt-white ">
@@ -8,8 +8,8 @@
             </br>
             {% endfor %} {% endfor %}
         </div>
-
-        <div class="pure-u-md-2-5 pure-u-sm-1">
+<div class="pure-u-md-1-5"></div>
+        <div class="pure-u-md-2-5 pure-u-sm-1 pure-u-1 padding-top-bottom">
                 <h3>Sign Up!</h3>
                 <p>Subscribe and stay updated about everything August!</p>
             {% include signUp.html %}</div>

@@ -77,6 +77,10 @@ fields:
   name: fg-color
   label: fg-color
   description: The text color. Make it high contrast with respect to the background.
+- type: text
+  name: layout
+  label: Layout
+  description: The layout of the page.Default if not mentioned.
 pages:
 - _services/web-development.html
 - _services/branding

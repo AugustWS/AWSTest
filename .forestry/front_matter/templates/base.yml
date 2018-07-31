@@ -1,0 +1,32 @@
+---
+label: Base
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: Title
+  name: title
+  description: The title that appears as the page's title
+  config:
+    required: true
+- type: textarea
+  label: Description
+  name: description
+  description: The description of the page, it will be picked by jekyll-seo
+- type: textarea
+  name: sub-title
+  label: Sub-title
+  description: Sorta small description. Might be visible
+- type: text
+  name: cta
+  label: CTA
+  description: The call-to-action that will be visible on the CTA button of the page.
+- type: text
+  name: bg-color
+  label: bg-color
+  description: The background color of the page
+- type: text
+  name: fg-color
+  label: fg-color
+  description: The text of the page appears in this color.Ensure that it has high
+    contrast to the background color.

@@ -1,7 +1,7 @@
 ---
-label: Base
+label: Service
 hide_body: false
-is_partial: true
+is_partial: false
 fields:
 - type: text
   label: Title

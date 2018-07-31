@@ -1,6 +1,4 @@
 ---
-- name: T
-  link: "/testimonials"
 - name: Home
   link: "/"
 - name: About

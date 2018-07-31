@@ -18,6 +18,10 @@ fields:
   type: text
   hidden: false
   default: ''
+- type: text
+  name: title
+  label: Title
+  description: The title of the page. May be visible.
 - type: tag_list
   name: tags_for_the_page
   label: Tags for the page
@@ -53,5 +57,25 @@ fields:
   label: category
   name: category
   description: What category does this service fall into?
+- type: textarea
+  name: description
+  label: Description
+  description: make it keyword rich. WIll be used by jekyll-seo
+- type: textarea
+  name: sub-title
+  label: Sub-Title
+  description: small description. Might be visible
+- type: text
+  name: cta
+  label: CTA
+  description: the text that appears on the call-to-action button
+- type: text
+  name: bg-color
+  label: bg-color
+  description: Background Color
+- type: text
+  name: fg-color
+  label: fg-color
+  description: The text color. Make it high contrast with respect to the background.
 pages:
 - _services/branding

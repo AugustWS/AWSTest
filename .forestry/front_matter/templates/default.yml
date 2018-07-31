@@ -1,4 +1,5 @@
 ---
+label: Default
 hide_body: false
 is_partial: false
 fields:
@@ -18,5 +19,5 @@ fields:
   hidden: false
   default: 
 pages:
-- _services/asss.md
 - testimonials.md
+- _services/asss.md

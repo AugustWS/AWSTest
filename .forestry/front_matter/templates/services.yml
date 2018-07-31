@@ -1,4 +1,5 @@
 ---
+label: Services
 hide_body: false
 is_partial: false
 fields:
@@ -74,5 +75,12 @@ fields:
       min: '1'
       max: '100000000'
       required: true
+- type: select
+  config:
+    source:
+      type: datafiles
+  label: category
+  name: category
+  description: What category does this service fall into?
 pages:
 - _services/branding

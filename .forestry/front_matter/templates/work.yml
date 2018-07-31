@@ -1,4 +1,5 @@
 ---
+label: Work
 hide_body: false
 is_partial: false
 fields:
@@ -36,5 +37,3 @@ fields:
   name: images_of_work_done
   label: Images of work done
   description: Screenshots of our work
-pages:
-- _work/google.md

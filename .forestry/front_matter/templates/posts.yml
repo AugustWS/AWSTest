@@ -1,4 +1,5 @@
 ---
+label: Posts
 hide_body: false
 is_partial: false
 fields:
@@ -79,6 +80,6 @@ fields:
   label: Category
   description: Enter the category of this post
 pages:
+- _posts/2018-05-23-fhgfhgfh.md
 - _posts/2018-05-24-top-5-reasons-to-do-seo-on-your-website.md
 - _posts/2018-05-23-asdadads.md
-- _posts/2018-05-23-fhgfhgfh.md

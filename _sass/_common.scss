@@ -441,3 +441,12 @@ hr {
 // left: 0;
 // }
 
+.thumbnail {
+    border-top: 6px solid $brand-secondary;
+    background-color: #fff;
+    margin: 0 1rem 0 0;
+    box-shadow: 5px 5px 20px 0 rgba(46,61,73,.2);
+    border-radius: .375rem;
+    padding: 0 1.5rem 3rem;
+  
+}

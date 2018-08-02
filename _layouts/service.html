@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+<Section id="what">
+<div class="wrapper box-shadow-large bordered-top">
+     <div class="pure-g  align-center "> 
+         <div class="pure-u-1 "> 
+             <h2 class="text-primary ">{{page.title}} ?</h2> 
+              <h4>{{page.why}} </h4>
+            </div></div>
+
+</div>
+</Section>
+<div class="verticle-line"> </div>
+
+<Section id="WhyAugust">
+<div class="wrapper box-shadow-large bordered-top">
+        <div class="pure-g  align-center "> 
+            <div class="pure-u-1 "> 
+                <h2 class="text-primary ">Why August?</h2> 
+                 <h4>{{content}} </h4>
+               </div></div>
+   
+   </div>
+</Section>
+
+   
+
+<div class="verticle-line"> </div>
+
+
+   <Section id="Pricing">
+        <div class="wrapper box-shadow-large bordered-top">
+                <div class="pure-g  align-center "> 
+                    <div class="pure-u-1 "> 
+                        <h2 class="text-primary">Pricing</h2> </div>
+                     
+                                  <div class="pure-u-1 align-center ">
+                                 
+                                    {% for p in page.pricepackage %}
+
+                                    <div class="pure-u-md-1-3 pure-u-sm-1 pure-u-1">
+                                          <div class="thumbnail ">       
+                                          
+                                              <div class="caption padding-top-bottom ">
+                                                <h3 class="text-primary"> <b>{{ p.Package_Name }}</b> </h3>
+                                               <div class="align-left">
+                                                <ul>                        
+                                                {% for feature in p.availablefeatures %}
+                                                  <li>{{ feature}}</li>
+                                                  {% endfor %}
+                                                </ul>  
+                                                  <p>From:<b class="text-primary"> Rs {{p.price}}</b></p>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    {% endfor %}
+                                  </div>
+                               
+                            
+           
+           </div>
+        </div>
+        </Section>
+           
+           <div class="verticle-line"> </div>

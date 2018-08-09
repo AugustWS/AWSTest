@@ -83,4 +83,3 @@ fields:
   description: The layout of the page.Default if not mentioned.
 pages:
 - _services/web-development.html
-- _services/branding

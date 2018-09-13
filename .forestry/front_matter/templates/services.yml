@@ -82,5 +82,4 @@ fields:
   label: Layout
   description: The layout of the page.Default if not mentioned.
 pages:
-- seo.md
 - _services/web-development.html

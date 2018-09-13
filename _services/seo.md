@@ -23,7 +23,7 @@ cta: 'Proper search engine optimization requires a full time effort as Google’
   and user’s keyword searches are constantly changing. '
 bg-color: Coral
 fg-color: White
-layout: service
+layout: Service
 
 ---
 ### Search Engine Optimization (also known as SEO) is important for your website and your marketing efforts. 

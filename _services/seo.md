@@ -21,8 +21,8 @@ description: asadadad
 sub-title: asdadad
 cta: 'Proper search engine optimization requires a full time effort as Google’s algorithm
   and user’s keyword searches are constantly changing. '
-bg-color: Coral
-fg-color: White
+bg-color: coral
+fg-color: white
 layout: service
 
 ---

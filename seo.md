@@ -20,7 +20,6 @@ cta: more
 bg-color: Coral
 fg-color: white
 layout: service
-published: false
 
 ---
 # sdadjadlkjdald

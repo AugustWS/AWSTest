@@ -16,13 +16,14 @@ pricepackage:
     your SEO as well*
   - Browser Caching
   price: 12000
-category: ''
-description: ''
-sub-title: ''
-cta: ''
-bg-color: ''
-fg-color: ''
-layout: ''
+category: _services/seo.md
+description: asadadad
+sub-title: asdadad
+cta: 'Proper search engine optimization requires a full time effort as Google’s algorithm
+  and user’s keyword searches are constantly changing. '
+bg-color: Coral
+fg-color: White
+layout: Service
 
 ---
 ### Search Engine Optimization (also known as SEO) is important for your website and your marketing efforts. 

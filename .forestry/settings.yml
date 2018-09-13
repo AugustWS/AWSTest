@@ -14,8 +14,7 @@ sections:
   label: Work
   create: all
   match: "**/*"
-- type: directory
-  path: _services
+- type: jekyll-pages
   label: Services
   create: all
   match: "**/*"

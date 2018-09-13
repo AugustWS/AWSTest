@@ -81,6 +81,7 @@ fields:
   name: layout
   label: Layout
   description: The layout of the page.Default if not mentioned.
+  default: service
 pages:
 - _services/seo.md
 - _services/web-development.html

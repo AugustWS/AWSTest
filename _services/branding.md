@@ -1,7 +1,18 @@
 ---
 title: Branding
 layout: service
-date: 2018-09-14 00:00:00 +0000
+date: ''
+why: []
+min-price: ''
+tags_for_the_page: []
+pricepackage: []
+category: ''
+description: ''
+sub-title: ''
+cta: ''
+bg-color: ''
+fg-color: ''
+backgroundimage: ''
 published: false
 
 ---

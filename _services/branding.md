@@ -29,6 +29,6 @@ There are various elements which are needed to be created for a strong branding.
 
 **Office Stationery Designing:** Business card design, letter heads designing, T-shirts, Products packaging, Gifting are the few factors which needs to be designed as a part of Strong Branding. Products are now mostly sold by showing the Brand identity with creating unique company branding products. T
 
-Email marketing
+Email marketing:
 
  

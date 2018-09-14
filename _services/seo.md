@@ -17,13 +17,24 @@ pricepackage:
   - Browser Caching
   price: 12000
 category: _services/seo.md
-description: asadadad
-sub-title: asdadad
+description: 'We support you in the growth of your website visibility, with our professional
+  services you will be benefited with increase in website traffic and higher rankings
+  on search engines. Our aim is to provide the best SEO services to our clients with
+  a target to achieve ROI
+
+'
+sub-title: 'We support you in the growth of your website visibility, with our professional
+  services you will be benefited with increase in website traffic and higher rankings
+  on search engines. Our aim is to provide the best SEO services to our clients with
+  a target to achieve ROI
+
+'
 cta: 'Proper search engine optimization requires a full time effort as Google’s algorithm
   and user’s keyword searches are constantly changing. '
 bg-color: coral
 fg-color: white
 layout: service
+backgroundimage: "/images/2018/09/14/SEO1.jpg"
 
 ---
 ### Search Engine Optimization (also known as SEO) is important for your website and your marketing efforts. 

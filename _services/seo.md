@@ -34,7 +34,7 @@ cta: 'Proper search engine optimization requires a full time effort as Google’
 bg-color: coral
 fg-color: white
 layout: service
-backgroundimage: "/images/2018/09/14/SEO1.jpg"
+backgroundimage: ''
 
 ---
 ### Search Engine Optimization (also known as SEO) is important for your website and your marketing efforts. 

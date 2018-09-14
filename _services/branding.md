@@ -18,7 +18,6 @@ cta: Let us know your vision with your products.
 bg-color: ''
 fg-color: ''
 backgroundimage: "/images/ecommerce.png"
-published: false
 
 ---
 **Brand identity** must become a fundamental right that every business owner should accept for a successful business. We can term it as prestige management tool for a company. A proper branding portrays trustworthiness for a company. Headlining the strong points of your business through our **branding solutions** will make us proud.
@@ -30,5 +29,3 @@ There are various elements which are needed to be created for a strong branding.
 **Office Stationery Designing:** Business card design, letter heads designing, T-shirts, Products packaging, Gifting are the few factors which needs to be designed as a part of Strong Branding. Products are now mostly sold by showing the Brand identity with creating unique company branding products. T
 
 Email marketing:
-
- 

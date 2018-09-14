@@ -87,6 +87,7 @@ fields:
   label: BackgroundImage
   description: Choose a background img for the service
 pages:
+- _services/digital-marketing.md
 - _services/branding.md
 - _services/web-development.html
 - _services/seo.md

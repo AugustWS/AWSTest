@@ -82,6 +82,10 @@ fields:
   label: Layout
   description: The layout of the page.Default if not mentioned.
   default: service
+- type: file
+  name: backgroundimage
+  label: BackgroundImage
+  description: Choose a background img for the service
 pages:
 - _services/seo.md
 - _services/web-development.html

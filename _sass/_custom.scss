@@ -321,18 +321,26 @@ animation: bubble 10s linear infinite;
 .grid
 {
   display: grid;
-  grid-template-columns: 40% auto;
+  grid-template-columns: 60% auto;
+  @media ($small) {
+    //grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+	}
 }
-#services .wrapper{
-  height: 400px;
- overflow: auto;
-}
+
 .sticky {
   position: -webkit-sticky; /* Safari */
   position: sticky;  
-  height: 200px;
+  height: 400px;
   width:100%;
   top:0;
+}
+.sticky img{
+  width:100%;
+  height: 100%;
+  top:0;
+  bottom:0;
 }
 
 

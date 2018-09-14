@@ -309,8 +309,31 @@ animation: bubble 10s linear infinite;
   //   position: relative;
   // }
 
+ 
 
-
+.header 
+{
+    border-bottom: solid 2px $brand-primary;
+    display: inline-block;
+    margin: 0 0 0.8em;
+    padding: 0 0 0.8em;
+}
+.grid
+{
+  display: grid;
+  grid-template-columns: 40% auto;
+}
+#services .wrapper{
+  height: 400px;
+ overflow: auto;
+}
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;  
+  height: 200px;
+  width:100%;
+  top:0;
+}
 
 
 .verticle-line {

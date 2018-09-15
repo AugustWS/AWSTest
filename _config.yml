@@ -7,7 +7,10 @@ baseurl: "/AWSTest"
 google_analytics_key: ""
 google_maps_javascript_api_key:
 disqus_shortname:
-newsletter_action: ""
+newsletter_action: "https://docs.google.com/forms/d/e/1FAIpQLSc5wqmujVvAE4DSJabFBKF-aLYnbJ7ouxRIypv9jid2WlaKYw/formResponse"
+audit_action: "https://docs.google.com/forms/d/e/1FAIpQLSdtLR9Mv72uWOY9Y4j4cW1TC-R3HIc7w12EUKR4bfo4zmiREQ/formResponse"
+contact_action: "https://docs.google.com/forms/d/e/1FAIpQLSfk7-YPN5xAqnIls9cxX52-eTvb_TA4jgSspguOcIrnVVga9A/formResponse"
+
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /logo.png
 description: web development, seo, branding and digital marketting.

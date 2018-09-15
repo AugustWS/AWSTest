@@ -36,10 +36,10 @@ $font-letter-spacing:0.1em;
 // Palette.
 
 $bg:				#f2f5fa;
-$bg-linear-left:      rgba(201, 75, 75, 0.5);
-$bg-linear-right: rgba(75, 19, 79, 0.5);
+$bg-linear-left:      rgb(84, 13, 110);//
+$bg-linear-right: rgba(84, 13, 110,0.4);//
     $fg:					#ffffff;
-    $fg-light-bg:        #7a7d86;
+    $fg-light-bg:        #404040;
     $fg-bold:	    	#ffffff;
     $fg-light:			#ccc;
     $border:				rgba(144,144,144,0.35);

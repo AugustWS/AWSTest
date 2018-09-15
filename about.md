@@ -5,6 +5,9 @@ sub-title: We make websites, optimize them for search and market them. Yup. We d
   it all!
 description : about our work and stuff like that.  
 permalink: /about/
+
+bg-color: coolBlue
+fg-color: white
 ---
 <div class="verticle-line"></div>
 
@@ -30,6 +33,7 @@ permalink: /about/
                         {% include allServices.html %}
                        
 </div>
+<div class="verticle-line"></div>
 <section id="freeAudit">
         <div class="pure-g  wrapper box-shadow-large center bordered-top">
                 <div class="pure-u-1">

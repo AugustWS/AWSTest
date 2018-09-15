@@ -8,11 +8,11 @@
 }
 .rotated-box
 {
-  width:40%;
-  height:50%;
-  border-radius:6px;
-  // transform: rotate(45deg);
-  position: absolute; 
+  width:10em;
+  height:20em;
+  border-radius:9px;
+  transform: rotate(45deg);
+   position: absolute; 
   z-index:-10;
   opacity: 0.8;
 
@@ -27,33 +27,47 @@
 }
 &.yellow
 {
-  transform: rotate(60deg);
-  top:40%;
-  left:0;
-  z-index:-10;
-  background-color:$bg-yellow;
-
-}
-&.coolBlue
-{
-  transform: rotate(30deg);
-  
+  transform: rotate(30deg);  
   top:auto;
   bottom:0;
   left:50%;
   z-index:-10;
+  background-color:$bg-yellow;
+  opacity: 0.7;
+  
+}
+&.coolBlue
+{
+  transform: rotate(60deg);
+  top:30%;
+  left:0;
+  z-index:-10;
+  width:20em;
+  height:30em;
   background-color:$bg-coolBlue;
+  opacity: 0.7;
 
 }
 &.royalBlue
 {
-  transform: rotate(20deg);
-  bottom:40%;
+  transform: rotate(40deg);
+  bottom:70%;
   left:0;
   z-index:-10;
-
   background-color:$bg-royalBlue;
-
+  opacity: 0.7;
+}
+&.primary
+{
+  width:10em;
+  height:30em;
+  transform: rotate(60deg);
+  top:50%;
+  left:20%;
+  z-index:-10;
+  opacity: 0.7;
+  //background-color:$bg-yellow;
+  background-color:$brand-primary;
 }
 }
 .triangles
@@ -74,17 +88,17 @@ display:block;
 width: 0; 
 opacity: 0.7;
 height: 0; 
-border-left: 50px solid transparent; 
-border-right: 50px solid transparent;
-border-bottom: 50px solid $bg-golden;
+border-left: 2em solid transparent; 
+border-right: 2em solid transparent;
+border-bottom: 2em solid $bg-golden;
 animation: bubble 10s linear infinite;
  }
 
  ul.triangles li:nth-child(1)
  {
-    border-left: 100px solid transparent; 
-    border-right: 100px solid transparent;
-    border-bottom: 100px solid $bg-coral;
+    border-left: 2em solid transparent; 
+    border-right: 2em solid transparent;
+    border-bottom: 2em solid $bg-coral;
     opacity: 0.7;
     animation-delay: 0s; 
     position: absolute;
@@ -93,19 +107,19 @@ animation: bubble 10s linear infinite;
 
  ul.triangles li:nth-child(2)
  {
-    border-left: 100px solid transparent; 
-    border-right: 100px solid transparent;
-    border-bottom: 100px solid $bg-pink;
+    border-left: 2em solid transparent; 
+    border-right: 2em solid transparent;
+    border-bottom: 2em solid $bg-pink;
     opacity: 0.3;
     animation-delay: 2s; 
     position: absolute;
-    left:80%;
+    left:70%;
  }
  ul.triangles li:nth-child(4)
  {
-    border-left: 50px solid transparent; 
-    border-right: 50px  solid transparent;
-    border-bottom: 50px  solid $bg-coolBlue;
+    border-left: 2em solid transparent; 
+    border-right: 2em  solid transparent;
+    border-bottom: 2em  solid $bg-coolBlue;
     opacity: 0.3;
     animation-delay: 5s; 
     position: absolute;
@@ -113,9 +127,9 @@ animation: bubble 10s linear infinite;
  }
  ul.triangles li:nth-child(5)
  {
-    border-left: 50px solid transparent; 
-    border-right: 50px  solid transparent;
-    border-bottom: 50px  solid $bg-yellow;
+    border-left: 2em solid transparent; 
+    border-right: 2em  solid transparent;
+    border-bottom: 2em  solid $bg-yellow;
     opacity: 0.3;
     animation-delay: 3s; 
     position: absolute;
@@ -123,9 +137,9 @@ animation: bubble 10s linear infinite;
  }
  .triangles li:nth-child(4)
  {
-    border-left: 60px solid transparent; 
-    border-right: 60px  solid transparent;
-    border-bottom: 60px  solid $bg-linear-right;
+    border-left: 2em solid transparent; 
+    border-right: 2em  solid transparent;
+    border-bottom: 2em  solid $bg-linear-right;
     opacity: 0.6;
     animation-delay: 5s; 
     position: absolute;
@@ -133,9 +147,9 @@ animation: bubble 10s linear infinite;
  }
  .triangles li:nth-child(4)
  {
-    border-left: 50px solid transparent; 
-    border-right: 50px  solid transparent;
-    border-bottom: 50px  solid $bg-yellow;
+    border-left: 2em solid transparent; 
+    border-right: 2em  solid transparent;
+    border-bottom: 2em  solid $bg-yellow;
     opacity: 0.3;
     animation-delay: 4s; 
     position: absolute;
@@ -157,7 +171,7 @@ animation: bubble 10s linear infinite;
  }
 
 .wrapper {
-  width: 70rem;
+  width: 80rem;
   max-width: calc(100% - 7rem);
   margin: 0 auto;
   padding: 2.5rem 2rem;
@@ -177,10 +191,10 @@ animation: bubble 10s linear infinite;
 }
 
 .sk-heroImage
-{
-  
+{  
   width: auto;
-  max-width: calc(100% - 7rem);
+ // max-width: calc(100% - 7rem);
+ max-width: 50%;
   margin: 0 auto;
   height: 500px;;
   padding: 2.5rem 2rem;
@@ -216,7 +230,8 @@ animation: bubble 10s linear infinite;
 // }
 .gradientBackground
 {
-  background: $background-linear;  
+  background:  linear-gradient(to right,$bg-linear-left,$bg-linear-right);
+ 
   color: $fg;
 }
 .pull-top
@@ -341,6 +356,7 @@ animation: bubble 10s linear infinite;
   height: 100%;
   top:0;
   bottom:0;
+  object-fit: cover;
 }
 
 

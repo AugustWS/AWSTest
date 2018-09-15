@@ -40,7 +40,7 @@
 {
   transform: rotate(60deg);
   top:30%;
-  left:0;
+  left:-10px;
   z-index:-10;
   width:20em;
   height:30em;
@@ -202,7 +202,9 @@ animation: bubble 10s linear infinite;
   flex-direction: column;
   //align-items: start;
   justify-content: center;
- 
+  @media ($small) {
+    max-width: calc(100% - 7rem);
+	}
  
 }
 // .gradient-skew-down
@@ -243,21 +245,21 @@ animation: bubble 10s linear infinite;
 {
   margin: 0 auto;
 }
-.sk-Jumbotron {
-  opacity: 0.9;
-  // background: url(/images/header.jpg);
-//background: #ad5389;  /* fallback for old browsers */
+// .sk-Jumbotron {
+//   opacity: 0.9;
+//   // background: url(/images/header.jpg);
+// //background: #ad5389;  /* fallback for old browsers */
 
-//position: relative;
- height: 80vh;
- padding: 3rem;
- display: flex;
- flex-direction: column;
- //align-items: start;
- justify-content: center;
- background-size: cover;
- background-repeat: no-repeat;
-  }
+// //position: relative;
+//  height: 80vh;
+//  padding: 3rem;
+//  display: flex;
+//  flex-direction: column;
+//  //align-items: start;
+//  justify-content: center;
+//  background-size: cover;
+//  background-repeat: no-repeat;
+//   }
   .skew
   {
     position: relative;
@@ -306,17 +308,17 @@ animation: bubble 10s linear infinite;
     border-top: 0px solid $brand-primary; 
    
   }
-  .sk-Jumbotron h1 {
-    font-size: 4rem;
-    margin-bottom: 0;
+  // .sk-Jumbotron h1 {
+  //   font-size: 4rem;
+  //   margin-bottom: 0;
    
-  }
+  // }
   
-  .sk-Jumbotron p {
-    font-size: 1.3rem;
-    margin-top: 0;
+  // .sk-Jumbotron p {
+  //   font-size: 1.3rem;
+  //   margin-top: 0;
    
-  }
+  // }
   
 
   // section

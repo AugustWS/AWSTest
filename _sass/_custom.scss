@@ -341,7 +341,7 @@ animation: bubble 10s linear infinite;
   grid-template-columns: 60% auto;
   @media ($small) {
     //grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
 
 	}
 }
@@ -359,6 +359,23 @@ animation: bubble 10s linear infinite;
   top:0;
   bottom:0;
   object-fit: cover;
+}
+
+
+@media ($small) {
+  .sticky {
+   
+    height: 200px;
+    width:100%;
+    top:0;
+    z-index: 0;
+    opacity:0.4;
+  }
+  .non-sticky
+  {
+    z-index: 2;
+  }
+  
 }
 
 

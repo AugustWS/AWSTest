@@ -3,10 +3,11 @@ title: Blog
 description: Learn more about our design process.
 sub-title: We make websites, optimize them for search and market them. Yup. We do
   it all!
-cta: You in?    
-bg-color: coral    
-fg-color: primary 
---- 
+cta: You in?
+bg-color: yellow
+fg-color: primary
+
+---
 <div class="wrapper box-shadow-large bordered-top">
                         <div class="pure-g  align-center ">
                                 <div class="pure-u-1 ">

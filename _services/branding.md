@@ -20,12 +20,28 @@ fg-color: ''
 backgroundimage: "/images/ecommerce.png"
 
 ---
-**Brand identity** must become a fundamental right that every business owner should accept for a successful business. We can term it as prestige management tool for a company. A proper branding portrays trustworthiness for a company. Headlining the strong points of your business through our **branding solutions** will make us proud.
+Branding
 
-There are various elements which are needed to be created for a strong branding. We can have a close look at few.
+What is branding?
 
-**Logo designing:** Logo can be treated as a first impression of your company. As you it is said first impression is the last impression. We will describe your company in your strong logo. Your potential logo will be used throughout the advertising and marketing strategies. Its your company's Omnipresent symbol.
+Branding is that fold of your marketing that needs to be not just strategic but also creative. This is where you design the face of your company. This is that stamp that will become your identity for others. The unique face others will recognise you by. 
 
-**Office Stationery Designing:** Business card design, letter heads designing, T-shirts, Products packaging, Gifting are the few factors which needs to be designed as a part of Strong Branding. Products are now mostly sold by showing the Brand identity with creating unique company branding products. T
+Why August?
 
-Email marketing:
+Our creative team will shape your ideology and story behind your product or service and narrate in a form that will bring in all the needed attention from the right people. Starting from the research till the final design, our team will be there on every step of the way to give you the best.
+
+Services we provide:
+
+Brand Strategy
+
+It is very important to know where and how to place your brand in the market. This part of our service will predict the ups and downs of the market to make sure you are always on the upside of all market trends. Our research will dedicate themselves to build a path to success by learning the needs of the consumers.
+
+Brand Identity 
+
+The next step is brand identity. Once we have learned what your consumers need and what you want to narrate we can begin to build an identity that will start to become the personality of your company. It may sound like a lot but our experienced team have it all covered for you. 
+
+Logo Designing
+
+Once the personality of your product or service is ready, it is time to start designing the face. Your logo is what represents you and is your beacon. Our creative team will design an artwork that will speak more than words for you. 
+
+Your brand must stand out in the crowd. Today with more and more competition it has become crucial to be unique. Our creative team will make sure that you do without losing your essence. 

@@ -1,6 +1,6 @@
 {% assign featured =  include.featured %}
 
-<div class="pure-g align-center">
+<!-- <div class="pure-g align-center">
         {% for work in site.work %}          
         
         <div class="pure-u-1-3 box box-shadow  bg-{{work.class}}">
@@ -11,4 +11,27 @@
         <div class="pure-u-2-3 box box-shadow ">
             {{ work.description }}</div>            
         {% endfor %}
-    </div>
+    </div> -->
+    {% for work in site.work %}  
+    <div class="pure-g align-center margin-small grid">
+
+            <div class="pure-u-md-1-3 pure-u-sm-1 pure-u-1 sticky">                   
+                <img src="{{ site.baseurl }}{{ work.backgroundimage }}" alt="{{ work.title }}" class="pure-img contain" >
+            </div>
+    
+            <div class="pure-u-md-1 pure-u-sm-1 pure-u-1 box non-sticky">
+                    <h3 class="text-primary ">                    
+                            <a href="{{ site.baseurl }}{{ work.url }}" class="fg-{{work.fg-color}} header"><b>{{ work.title }}</b></a>
+                            
+                        </h3>
+                {{ work.description }}
+                <div class="pure-u-md-1 pure-u-sm-1 pure-u-1 box ">
+                        <h5 class="text-primary">                    
+                                <a href="{{ site.baseurl }}{{ work.url }}" class="button buttonOutline-{{page.fg-color}}">Know More</a>
+                                
+                            </h5>
+                    </div>
+                </div>
+              
+        </div>
+        {% endfor %}

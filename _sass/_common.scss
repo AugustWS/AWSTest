@@ -187,12 +187,12 @@
 
 .bg-primary {
     background-color: $brand-primary;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 .bg-yellow
 {
     background-color:$bg-yellow;
-    opacity: 0.8;
+    opacity: 0.9;
    // transition: border 1s ease-in;
 }
 // .bg-yellow:hover
@@ -449,4 +449,11 @@ hr {
     border-radius: .375rem;
     padding: 0 1.5rem 3rem;
   
+}
+
+//alignment
+
+.text-align-left
+{
+    text-align: left;
 }

@@ -1,11 +1,15 @@
 ---
 title: SEO
 date: 2018-09-13 00:00:00 +0000
-why:
-- Review keyword data on a quarterly basis to see how many average monthly searches
-  keywords/keyphrases are getting
-- Review keyword data on a quarterly basis to see how many average monthly searches
-  keywords/keyphrases are getting
+why: 'You spent time, energy and money to reach where you are. All your ideas, brainstorming and research resulting into a product or service that you are passionate about. You have your website all set up and all you need now is your target audience. And we know how find them!
+
+<p><b>Ever wondered how to increase the traffic to your website?
+How to increase your google ranking?
+Why do your competitors seem to have better keywords ranking than your do?</b></p>
+<p>
+The answer to all your questions is  SEO (Search engine optimization). Most people think of it as some hoodwink technique to trick google into showing your website in  the top 10 results. But it is just convincing google that your are the right resource for your target keyword. Now what is keyword. Keyword is basically the phrase that Having a website in this time and age like( some needle in the haystack type comparison). Right SEO gets you in front of the right clients. Clients who are looking for your product or your service.
+SEO is not a one time process. With change in googles algorithm , your website may change positions in the search results. Users keyword searches change with trends. So the seo strategy that worked for you last month may no longer get you the expected results. With so many variables in play, how do you ensure that your product reaches the right audience at the right time? You either pain staking learn the methods of ranking your website, or you make us your digital partners and we ensure that we will stay on top of things for you and never let your product fail because it didnt reach your niche audience.</p>'
+
 min-price: 12000
 tags_for_the_page:
 - seo
@@ -23,16 +27,13 @@ description: 'We support you in the growth of your website visibility, with our 
   a target to achieve ROI
 
 '
-sub-title: 'We support you in the growth of your website visibility, with our professional
-  services you will be benefited with increase in website traffic and higher rankings
-  on search engines. Our aim is to provide the best SEO services to our clients with
-  a target to achieve ROI
+sub-title: 'We will help you reach your target audience!
+
 
 '
-cta: 'Proper search engine optimization requires a full time effort as Google’s algorithm
-  and user’s keyword searches are constantly changing. '
-bg-color: coral
-fg-color: white
+cta: 'know more '
+bg-color: none
+fg-color: primary
 layout: service
 backgroundimage: "/images/SEO.png"
 

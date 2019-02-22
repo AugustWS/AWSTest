@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<Section id="work">
+<div class="wrapper box-shadow-large bordered-top">
+     <div class="pure-g  align-center "> 
+         <div class="pure-u-1 "> 
+                <div class="pure-g align-center margin-small grid">
+
+                        <div class="pure-u-md-1-3 pure-u-sm-1 pure-u-1 sticky">                   
+                            <img src="{{ site.baseurl }}{{ work.backgroundimage }}" alt="{{ work.title }}" class="pure-img contain" >
+                        </div>
+                
+                        <div class="pure-u-md-1 pure-u-sm-1 pure-u-1 box non-sticky">
+                                <h3 class="text-primary ">                    
+                                        <a href="{{ site.baseurl }}{{ work.url }}" class="fg-{{work.fg-color}} header"><b>{{ page.title }}</b></a>
+                                        
+                                    </h3>
+                            {{ content }}
+                            
+                            </div>
+                          
+                    </div>
+            </div></div>
+
+</div>
+</Section>
+<div class="verticle-line"> </div>

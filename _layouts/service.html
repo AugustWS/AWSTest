@@ -6,7 +6,7 @@ layout: default
 <div class="wrapper box-shadow-large bordered-top">
      <div class="pure-g  align-center "> 
          <div class="pure-u-1 "> 
-             <h2 class="text-primary">{{page.title}} ?</h2> 
+             <h2 class="text-primary">{{page.title}}</h2> 
          <p>{{ page.why }}</p>>
             </div></div>
 
@@ -31,32 +31,38 @@ layout: default
 
 
    <Section id="Pricing">
-        <div class="wrapper box-shadow-large bordered-top">
-                <div class="pure-g  align-center "> 
-                    <div class="pure-u-1 "> 
-                        <h2 class="text-primary">Pricing</h2> </div>
-                     
+        <div class="wrapper bordered-top">
+                <div class="pure-g  "> 
+                    <div class="pure-u-1  align-center  "> 
+                        <h2 class="text-primary header">Pricing</h2> </div>
+                  
                                   <div class="pure-u-1 align-center ">
                                  
                                     {% for p in page.pricepackage %}
 
-                                    <div class="pure-u-md-1-3 pure-u-sm-1 pure-u-1">
-                                          <div class="thumbnail ">       
-                                          
-                                              <div class="caption padding-top-bottom ">
-                                                <h3 class="text-primary"> <b>{{ p.Package_Name }}</b> </h3>
-                                               <div class="align-left">
-                                                <ul>                        
+                                    <div class=" pure-u-md-1-3">
+                                            <div class="rotated-box coolBlue"></div>
+                                          <div class="price-table ">                                                                                       
+                                              <div class="price-header pricing-table-header">
+                                                <h3 class=""> <b>{{ p.Package_Name }}</b> </h3>
+                                                <span class="pricing-table-price">
+                                                        Rs {{p.price}} <span>per month</span>
+                                                </span>
+                                              </div>
+                                               <div class="price-content">
+                                                <ul class="pricing-table-list  text-align-left">                        
                                                 {% for feature in p.availablefeatures %}
                                                   <li>{{ feature}}</li>
                                                   {% endfor %}
+                                                
                                                 </ul>  
-                                                  <p>From:<b class="text-primary"> Rs {{p.price}}</b></p>
+                                                <a class=" pure-button button buttonOutline-{{page.fg-color}}" href="{{site.baseurl}}#enquiry">Choose</a>
                                                 </div>
                                             </div>
-                                          </div>
+                                          
                                         </div>
                                     {% endfor %}
+                                </div>
                                   </div>
                                
                             
@@ -66,74 +72,3 @@ layout: default
         </Section>
            
            <div class="verticle-line"> </div>
-
-           <div class="pricing-tables pure-g">
-            <div class="pure-u-1 pure-u-md-1-3">
-                <div class="pricing-table pricing-table-free">
-                    <div class="pricing-table-header">
-                        <h2>Personal</h2>
-    
-                        <span class="pricing-table-price">
-                            $5 <span>per month</span>
-                        </span>
-                    </div>
-    
-                    <ul class="pricing-table-list">
-                        <li>Free setup</li>
-                        <li>Custom sub-domain</li>
-                        <li>Standard customer support</li>
-                        <li>1GB file storage</li>
-                        <li>1 database</li>
-                        <li>Unlimited bandwidth</li>
-                    </ul>
-    
-                    <button class="button-choose pure-button">Choose</button>
-                </div>
-            </div>
-    
-            <div class="pure-u-1 pure-u-md-1-3">
-                <div class="pricing-table pricing-table-biz pricing-table-selected">
-                    <div class="pricing-table-header">
-                        <h2>Small Business</h2>
-    
-                        <span class="pricing-table-price">
-                            $25 <span>per month</span>
-                        </span>
-                    </div>
-    
-                    <ul class="pricing-table-list">
-                        <li>Free setup</li>
-                        <li>Use your own domain</li>
-                        <li>Standard customer support</li>
-                        <li>10GB file storage</li>
-                        <li>5 databases</li>
-                        <li>Unlimited bandwidth</li>
-                    </ul>
-    
-                    <button class="button-choose pure-button">Choose</button>
-                </div>
-            </div>
-    
-            <div class="pure-u-1 pure-u-md-1-3">
-                <div class="pricing-table pricing-table-enterprise">
-                    <div class="pricing-table-header">
-                        <h2>Enterprise</h2>
-    
-                        <span class="pricing-table-price">
-                            $45 <span>per month</span>
-                        </span>
-                    </div>
-    
-                    <ul class="pricing-table-list">
-                        <li>Free setup</li>
-                        <li>Use your own domain</li>
-                        <li>Premium customer support</li>
-                        <li>Unlimited file storage</li>
-                        <li>25 databases</li>
-                        <li>Unlimited bandwidth</li>
-                    </ul>
-    
-                    <button class="button-choose pure-button">Choose</button>
-                </div>
-            </div>
-        </div>

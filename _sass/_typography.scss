@@ -61,7 +61,7 @@ html {
 
 body, input, select, textarea,label,button {
 	font-family: $font-family;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	font-weight: $font-weight;
 	line-height: 1.5;
 	
@@ -91,7 +91,7 @@ p {
 	margin: 0 0 $element-margin 0;
 
 	&.major {
-		font-size: 2rem;
+		font-size: 1.9rem;
 	}
 }
 
@@ -108,16 +108,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 3.5rem;
+	font-size: 3rem;
 	line-height: 1.2;
 }
 
 h2 {
-	font-size: 2rem;
+	font-size: 1.9rem;
 }
 
 h3 {
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 }
 
 h4 {

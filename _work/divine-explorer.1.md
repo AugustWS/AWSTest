@@ -1,6 +1,7 @@
 ---
-title: Gaurav Hingne
-description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tempora nemo repellendus voluptatibus! Itaque hic incidunt, eligendi quaerat magni dolorem ducimus minus nesciunt ab quibusdam velit doloribus libero vero us voluptatem."
+title: Divine 
+layout: work
+description : Spiritual journey's to find the divine within
 category: web
 ---
 

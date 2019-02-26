@@ -58,3 +58,30 @@
 @mixin background-color($color) {
 	background-color: $color;
   }
+
+  @mixin griding {
+    @for $i from 1 through 15 {
+      &:nth-child(odd) {
+        grid-column: $i+2/$i+3;       
+        grid-row-end: span 3;
+      }
+      &:nth-child(even) {
+        grid-column: 2/4;       
+        grid-row: $i/5;
+      }
+    }
+
+   ///Add padding to the element
+/// @param {mixed} $tb Top/bottom padding.
+/// @param {mixed} $lr Left/right padding.
+/// @param {list} $pad Optional extra padding (in the following order top, right, bottom, left)
+/// @param {bool} $important If true, adds !important.
+@mixin padding($tb, $lr, $pad: (0,0,0,0), $important: null) {
+
+	@if $important {
+		$important: '!important';
+	}
+
+	padding: ($tb + nth($pad,1)) ($lr + nth($pad,2)) max(0.1em, $tb - _size(element-margin) + nth($pad,3)) ($lr + nth($pad,4)) #{$important};
+
+}

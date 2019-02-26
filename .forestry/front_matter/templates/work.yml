@@ -37,3 +37,5 @@ fields:
   name: images_of_work_done
   label: Images of work done
   description: Screenshots of our work
+pages:
+- _work/GauravHingne.md

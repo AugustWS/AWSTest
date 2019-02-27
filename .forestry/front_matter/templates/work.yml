@@ -21,6 +21,9 @@ fields:
   description: Will this be shown on home page?
   default: true
 - type: image_gallery
+  name: featuredimg
+  label: Featured Image
+  description: the image that will be used to represent this project.
 - type: textarea
   name: description
   label: Description

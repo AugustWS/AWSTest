@@ -1,18 +1,18 @@
 
     {% for service in site.services %}
-    <div class="pure-g align-center margin-small grid">
+    <div class="margin-small grid">
 
-        <div class="pure-u-md-1-3 pure-u-sm-1 pure-u-1 sticky">                   
+        <div class="sticky">                   
             <img src="{{ site.baseurl }}{{ service.backgroundimage }}" alt="{{ service.title }}" class="pure-img contain" >
         </div>
 
-        <div class="pure-u-md-1 pure-u-sm-1 pure-u-1 box non-sticky">
+        <div class="box non-sticky margin-small">
                 <h3 class="text-primary ">                    
                         <a href="{{ site.baseurl }}{{ service.url }}" class="fg-{{service.fg-color}} header"><b>{{ service.title }}</b></a>
                         
                     </h3>
-            {{ service.description }}
-            <div class="pure-u-md-1 pure-u-sm-1 pure-u-1 box ">
+           <p> {{ service.description }}</p>
+            <div class="box">
                     <h5 class="text-primary">                    
                             <a href="{{ site.baseurl }}{{ service.url }}" class="button button-cta">Know More</a>
                             

@@ -60,16 +60,16 @@
   }
 
   @mixin griding {
-    @for $i from 1 through 15 {
-      &:nth-child(odd) {
-        grid-column: $i+2/$i+3;       
+    @for $i from 1 through 20 {
+      &:nth-child(odd) {    
         grid-row-end: span 3;
+        position: sticky;  
       }
       &:nth-child(even) {
-        grid-column: 2/4;       
-        grid-row: $i/5;
+        grid-row-end: span 2;
       }
     }
+  }
 
    ///Add padding to the element
 /// @param {mixed} $tb Top/bottom padding.

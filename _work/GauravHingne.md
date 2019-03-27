@@ -6,7 +6,7 @@ description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
 category: web
 isfeatured: true
 featuredimg:
-- "/images/search engine optimization.png"
+- "/images/search engine optimization-1.png"
 cta: ''
 customerfeedback: ''
 moreinfo: ''

@@ -6,7 +6,7 @@ description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
 category: web
 isfeatured: true
 featuredimg:
-- "/images/www.gauravhingne.com_.png"
+- "/images/search engine optimization.png"
 cta: ''
 customerfeedback: ''
 moreinfo: ''

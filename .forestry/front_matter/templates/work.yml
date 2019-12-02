@@ -40,5 +40,6 @@ fields:
   label: Images of work done
   description: Screenshots of our work
 pages:
-- _work/GauravHingne.md
+- _work/example-1.md
 - _work/fatty-s-photography.md
+- _work/GauravHingne.md
